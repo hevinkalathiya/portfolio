@@ -8,26 +8,14 @@ import { Moon, Sun } from "lucide-react";
 
 const Navbar = () => {
   const { theme, setTheme } = useTheme();
-  const [scrolling, setScrolling] = useState(false);
 
-  const handleScroll = () => {
-    if (window.scrollY > 0) {
-      setScrolling(true);
-    } else {
-      setScrolling(false);
-    }
+  const toggleTheme = () => {
+    setTheme(theme === "light" ? "dark" : "light");
   };
-
-  useEffect(() => {
-    window.addEventListener("scroll", handleScroll);
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
   return (
     <>
       <header className="hidden md:block">
-        <h1 className="text-3xl font-bold text pt-10 pb-8">
+        <h1 className="text-3xl font-bold text pt-8 pb-8">
           <span className="pr-3">🧿</span>
           Hevin Kalathiya
         </h1>
@@ -35,10 +23,7 @@ const Navbar = () => {
       <nav
         style={{ backdropFilter: "blur(18px)" }}
         className={cn(
-          "fixed md:relative w-full flex justify-between items-center border-b md:border-transparent p-4 border-gray-600",
-          {
-            "bg-blur": scrolling,
-          }
+          "fixed md:relative w-full flex justify-between items-center border-b md:border-transparent p-4 border-gray-600"
         )}
       >
         <ul className="flex gap-4 md:gap-10 text-base md:text-xl font-medium pl-1">
@@ -56,11 +41,7 @@ const Navbar = () => {
           </li>
         </ul>
         <div className="">
-          <Button
-            className=""
-            variant="ghost"
-            onClick={() => setTheme(theme === "light" ? "dark" : "light")}
-          >
+          <Button className="relative" variant="ghost" onClick={toggleTheme}>
             <Sun
               className={`h-[1.2rem] w-[1.2rem] rotate-0 scale-100 transition-all ${
                 theme === "dark" ? "dark:-rotate-90 dark:scale-0" : ""
