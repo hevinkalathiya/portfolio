@@ -35,7 +35,7 @@ const Navbar = () => {
       <nav
         style={{ backdropFilter: "blur(18px)" }}
         className={cn(
-          "fixed md:relative w-full flex justify-between items-center border-b md:border-transparent p-2 border-gray-600",
+          "fixed md:relative w-full flex justify-between items-center border-b md:border-transparent p-4 border-gray-600",
           {
             "bg-blur": scrolling,
           }
