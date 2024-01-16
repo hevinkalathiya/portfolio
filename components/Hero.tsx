@@ -14,9 +14,10 @@ const Hero = () => {
     >
       <div className="w-full md:w-7/12">
         <h1
-          className={`text-3xl md:text-5xl font-bold ${
+          className={cn(
+            "text-3xl md:text-5xl1 font-bold text-white",
             theme === "dark" ? "text-white" : "text-gray-800"
-          }`}
+          )}
         >
           Hellow, I&apos;m Hevin 🎄
         </h1>
