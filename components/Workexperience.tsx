@@ -32,13 +32,13 @@ const Workexperience = () => {
         {data.map((item) => (
           <div
             key={item.id}
-            className="flex mt-5 items-start lg:gap-x-6 gap-x-4 max-w-2xl relative before:absolute before:bottom-0 before:top-[5rem] before:left-9 before:w-[1px] before:h-[calc(100%-70px)] dark:before:bg-zinc-800 before:bg-zinc-200"
+            className="flex mt-5 items-start lg:gap-x-6 gap-x-4 max-w-2xl md:relative before:absolute before:bottom-0 before:top-[5rem] before:left-9 before:w-[1px] before:h-[calc(100%-70px)] dark:before:bg-zinc-800 before:bg-zinc-200"
           >
             <a
               href=""
               rel="noreferrer noopener"
               target="_blank"
-              className="grid place-items-center dark:bg-primary-bg bg-secondary-bg border dark:border-zinc-800 border-zinc-200 min-h-[80px] min-w-[80px] p-2 rounded-md overflow-clip relative"
+              className="grid place-items-center dark:bg-primary-bg bg-secondary-bg border dark:border-zinc-800 border-zinc-200 min-h-[80px] min-w-[80px] p-2 rounded-md overflow-clip md:relative"
             >
               <Image
                 alt="G4GAME logo"
