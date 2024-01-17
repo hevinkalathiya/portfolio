@@ -32,7 +32,7 @@ const Workexperience = () => {
         {data.map((item) => (
           <div
             key={item.id}
-            className="flex mt-5 items-start lg:gap-x-6 gap-x-4 max-w-2xl md:relative before:absolute before:bottom-0 before:top-[5rem] before:left-9 before:w-[1px] before:h-[calc(100%-70px)] dark:before:bg-zinc-800 before:bg-zinc-200"
+            className="flex mt-5 items-start lg:gap-x-6 gap-x-4 max-w-2xl md:relative md:before:absolute before:bottom-0 before:top-[5rem] before:left-9 before:w-[1px] before:h-[calc(100%-70px)] dark:before:bg-zinc-800 before:bg-zinc-200"
           >
             <a
               href=""
