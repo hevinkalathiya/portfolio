@@ -41,13 +41,13 @@ const Workexperience = () => {
               className="grid place-items-center dark:bg-primary-bg bg-secondary-bg border dark:border-zinc-800 border-zinc-200 min-h-[80px] min-w-[80px] p-2 rounded-md overflow-clip md:relative"
             >
               <Image
-                alt="G4GAME logo"
+                alt="Company Logo"
                 loading="lazy"
                 width="50"
                 height="50"
                 decoding="async"
                 data-nimg="1"
-                className="object-cover duration-300"
+                className="object-cover duration-300 "
                 style={{ color: "transparent" }}
                 src={item.companyLogo}
               />
