@@ -15,16 +15,14 @@ const Hero = () => {
       <div className="w-full md:w-7/12">
         <h1
           className={cn(
-            "text-3xl md:text-5xl1 font-bold text-white",
-            theme === "dark" ? "text-white" : "text-gray-800"
+            "text-3xl md:text-5xl1 font-bold dark:text-white text-gray-800"
           )}
         >
           Hellow, I&apos;m Hevin 🎄
         </h1>
         <p
           className={cn(
-            "text-base md:text-lg mt-4",
-            theme === "dark" ? "text-gray-300" : "text-gray-600"
+            "text-base md:text-lg mt-4 dark:text-gray-300 text-gray-600"
           )}
         >
           Explore my digital sanctuary where creativity and innovation
