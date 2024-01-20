@@ -30,7 +30,7 @@ const Navbar = () => {
       </header>
       <nav
         className={cn(
-          "fixed backdrop-blur-lg	z-50 md:relative w-full flex justify-between items-center border-b md:border-transparent p-4 border-gray-600"
+          "fixed backdrop-blur-lg	z-50 md:relative w-full flex justify-between items-center border-b md:border-transparent py-4 border-gray-600"
         )}
       >
         <ul className="flex gap-4 md:gap-10 text-base md:text-xl font-medium pl-1">
