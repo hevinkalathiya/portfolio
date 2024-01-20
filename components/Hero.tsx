@@ -8,7 +8,7 @@ const Hero = () => {
 
   return (
     <div
-      className={`block md:flex items-center py-8 px-2 mt-10 md:mt-0  ${
+      className={`block md:flex items-center py-8 px-2 mt-16 md:mt-0  ${
         theme === "dark" ? "dark" : ""
       }`}
     >
