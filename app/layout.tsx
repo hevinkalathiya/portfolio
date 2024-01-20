@@ -3,6 +3,8 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import { cn } from "@/lib/utils";
 import { ThemeProvider } from "@/components/theme-provider";
+import Navbar from "@/components/Navbar";
+import MaxWidthWrapper from "@/components/MaxWidthWrapper";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -25,6 +27,9 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
+          <MaxWidthWrapper className="mx-auto">
+            <Navbar />
+          </MaxWidthWrapper>
           {children}
         </ThemeProvider>
       </body>

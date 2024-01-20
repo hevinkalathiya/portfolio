@@ -2,15 +2,23 @@
 
 import { cn } from "@/lib/utils";
 import { useTheme } from "next-themes";
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { Button } from "./ui/button";
 import { Moon, Sun } from "lucide-react";
+import { usePathname, useRouter } from "next/navigation";
 
 const Navbar = () => {
   const { theme, setTheme } = useTheme();
+  const router = useRouter();
 
   const toggleTheme = () => {
     setTheme(theme === "light" ? "dark" : "light");
+  };
+
+  const pathName = usePathname();
+
+  const navigateTo = (path: string) => {
+    router.push(path);
   };
   return (
     <>
@@ -29,10 +37,22 @@ const Navbar = () => {
           <li className="border-b-2 border-transparent hover:border-b-2 hover:border-purple-900 cursor-pointer">
             About
           </li>
-          <li className="border-b-2 border-transparent hover:border-b-2 hover:border-cyan-500 cursor-pointer">
+          <li
+            className={cn(
+              "border-b-2 border-transparent hover:border-b-2 hover:border-cyan-500 cursor-pointer",
+              pathName === "/blog" ? "border-b-2 border-cyan-500" : ""
+            )}
+            onClick={() => navigateTo("/blog")}
+          >
             Blog
           </li>
-          <li className="border-b-2 border-transparent hover:border-b-2 hover:border-red-600 cursor-pointer">
+          <li
+            className={cn(
+              "border-b-2 border-transparent hover:border-b-2 hover:border-red-600 cursor-pointer",
+              pathName === "/projects" ? "border-b-2 border-red-600" : ""
+            )}
+            onClick={() => navigateTo("/projects")}
+          >
             Projects
           </li>
           <li className="border-b-2 border-transparent hover:border-b-2 hover:border-green-500 cursor-pointer">
