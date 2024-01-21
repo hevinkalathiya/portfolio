@@ -11,6 +11,10 @@ const Navbar = () => {
   const { theme, setTheme } = useTheme();
   const router = useRouter();
 
+  const pathname = usePathname();
+
+  const isActive = pathname?.includes("/projects");
+
   const toggleTheme = () => {
     setTheme(theme === "light" ? "dark" : "light");
   };
@@ -22,15 +26,15 @@ const Navbar = () => {
   };
   return (
     <>
-      <header className="hidden md:block">
+      {/* <header className="hidden md:block">
         <h1 className="text-3xl font-bold text pt-8 pb-8">
           <span className="pr-3">🧿</span>
           Hevin Kalathiya
         </h1>
-      </header>
+      </header> */}
       <nav
         className={cn(
-          "fixed backdrop-blur-lg	z-50 md:relative w-full flex justify-between items-center border-b md:border-transparent py-4 border-gray-600"
+          "fixed backdrop-blur-lg	z-50 md:relative w-full flex justify-between items-center  py-4 border-gray-600 "
         )}
       >
         <ul className="flex gap-4 md:gap-10 text-base md:text-xl font-medium pl-1">
@@ -49,7 +53,7 @@ const Navbar = () => {
           <li
             className={cn(
               "border-b-2 border-transparent hover:border-b-2 hover:border-red-600 cursor-pointer",
-              pathName === "/projects" ? "border-b-2 border-red-600" : ""
+              isActive ? "border-b-2 border-red-600" : ""
             )}
             onClick={() => navigateTo("/projects")}
           >

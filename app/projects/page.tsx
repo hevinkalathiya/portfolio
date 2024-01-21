@@ -1,47 +1,15 @@
 import Heading from "@/components/Heading";
 import MaxWidthWrapper from "@/components/MaxWidthWrapper";
+import { projects } from "@/components/Projects";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-
-const projects = [
-  {
-    id: 1,
-    title: "Tour Managment",
-    description: "This is Tour Managment App",
-    imageSrc: "/images/hero_image.png",
-    name: "tour-managment",
-    link: "/projects/airbnb",
-    githubLink: "",
-    liveLink: "",
-  },
-  {
-    id: 2,
-    title: "Airbnb",
-    description: "The Ai Web-App for you to talk with your PDFs",
-    imageSrc: "/images/hero_image.png",
-    name: "Airbnb",
-    link: "/projects/tour-managment",
-    githubLink: "",
-    liveLink: "",
-  },
-  {
-    id: 3,
-    title: "Airbnb",
-    description: "The Ai Web-App for you to talk with your PDFs",
-    imageSrc: "/images/hero_image.png",
-    name: "Airbnb",
-    link: "/projects/tour-managment",
-    githubLink: "",
-    liveLink: "",
-  },
-];
 
 const page = () => {
   return (
     <MaxWidthWrapper className="mx-auto">
       <Heading title="Ideas  ✨" center titleClassName="text-4xl mt-8 " />
-      <div className="grid xl:grid-cols-2 md:grid-cols-1  gap-5 mb-12">
+      <div className="grid xl:grid-cols-2 md:grid-cols-1  gap-5 my-12">
         {projects.map((project) => (
           <ProjectCard key={project.id} {...project} />
         ))}
@@ -72,7 +40,7 @@ const ProjectCard = ({
         loading="lazy"
         src={imageSrc}
         width="60"
-        height="60"
+        height="100"
         decoding="async"
         data-nimg="1"
         className="dark:bg-transparent bg-zinc-100 rounded-md p-2"

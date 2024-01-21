@@ -30,6 +30,7 @@ export default function RootLayout({
           <MaxWidthWrapper className="mx-auto">
             <Navbar />
           </MaxWidthWrapper>
+          <hr className="text-gray-600 mb-2" />
           {children}
         </ThemeProvider>
       </body>

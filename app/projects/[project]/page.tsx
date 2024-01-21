@@ -1,80 +1,101 @@
+/* eslint-disable @next/next/no-img-element */
 "use client";
+
+import Heading from "@/components/Heading";
 import MaxWidthWrapper from "@/components/MaxWidthWrapper";
+import { projects } from "@/components/Projects";
+import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Github, Link } from "lucide-react";
-import Image from "next/image";
-import React from "react";
+import React, { useState } from "react";
 
 interface IParams {
   project: string;
 }
-
-const projects = [
-  {
-    id: 1,
-    title: "Tour Managment",
-    description: "This is Tour Managment App",
-    imageSrc: "/images/hero_image.png",
-    name: "tour-managment",
-    githubLink: "",
-    liveLink: "",
-  },
-  {
-    id: 2,
-    title: "Airbnb",
-    description: "The Ai Web-App for you to talk with your PDFs",
-    imageSrc: "/images/hero_image.png",
-    name: "airbnb",
-    githubLink: "",
-    liveLink: "",
-  },
-];
 
 const Page = ({ params }: { params: IParams }) => {
   const filtered = projects.filter(
     (project) => params.project === project.name
   );
 
-  console.log(filtered);
+  const [hoveredIndex, setHoveredIndex] = useState(null);
+  const wrappers = document.querySelectorAll(
+    ".card-img-wrapper"
+  ) as NodeListOf<HTMLDivElement>;
+  const images = document.querySelectorAll(
+    ".card-image"
+  ) as NodeListOf<HTMLImageElement>;
+  const handleMouseEnter = (index: any) => {
+    setHoveredIndex(index);
+  };
+  const handleMouseLeave = () => {
+    setHoveredIndex(null);
+  };
 
   return (
     <MaxWidthWrapper className="mx-auto">
-      {filtered.map((project) => (
-        <React.Fragment key={project.liveLink}>
-          <div className="flex justify-between">
-            <h1 className="text-4xl font-bold">{project.title}</h1>
-            <div className="">
-              <Button variant="outline" className="mr-5">
-                Live Demo
-                <Link
-                  to={project.liveLink}
-                  className="ml-2 font-medium text-xl"
-                />
-              </Button>
-              <Button variant="secondary">
-                Github
-                <Github
-                  to={project.githubLink}
-                  className="ml-2 font-medium text-xl"
-                />
-              </Button>
+      {filtered.map((project, index) => {
+        const divWrapper = wrappers[index];
+        const img = images[index];
+        const isHovered = index === hoveredIndex;
+
+        return (
+          <React.Fragment key={project.liveLink}>
+            <div className="flex justify-between">
+              <h1 className="text-4xl font-bold">{project.title}</h1>
+              <div className="">
+                <Button
+                  variant="outline"
+                  className="mr-5"
+                  onClick={() => window.open(project.liveLink, "_blank")}
+                >
+                  Live Demo
+                  <Link
+                    to={project.liveLink}
+                    className="ml-2 font-medium text-xl"
+                  />
+                </Button>
+                <Button
+                  variant="secondary"
+                  onClick={() => window.open(project.githubLink, "_blank")}
+                >
+                  Github
+                  <Github
+                    to={project.githubLink}
+                    className="ml-2 font-medium text-xl "
+                  />
+                </Button>
+              </div>
             </div>
-          </div>
-          <div className="p-4 bg-purple-500 rounded-xl ">
-            <Image
-              alt={project.title}
-              loading="lazy"
-              src={project.imageSrc}
-              decoding="async"
-              data-nimg="1"
-              height={100}
-              width={100}
-              className="w-100 rounded-md p-2  bg-green-500 mx-auto"
-            />
-          </div>
-          <div className=""></div>
-        </React.Fragment>
-      ))}
+            <div className="overflow-hidden card-img-wrapper h-[500px] rounded-xl my-10 m-2 border border-gray-800 dark:border-white">
+              <img
+                src={project.imageSrc}
+                className="card-image w-full duration-2000 rounded-lg cursor-pointer hover:shadow-xl"
+                alt={project.title}
+                onMouseEnter={() => handleMouseEnter(index)}
+                onMouseLeave={handleMouseLeave}
+                style={{
+                  transform: `translateY(${
+                    isHovered
+                      ? -(img.height - divWrapper?.clientHeight) + "px"
+                      : "0px"
+                  })`,
+                }}
+              />
+            </div>
+            <hr className="my-8" />
+            <Heading title="Description   🔮" titleClassName="text-3xl" />
+            <li className="text-xl">{project.description}</li>
+            <hr className="my-8" />
+            <Heading title="Tech-Stack   ⛳" titleClassName="text-3xl " />
+            {project.techStack.map((tech) => (
+              <Badge variant="outline" key={tech} className="mt-3 mr-5">
+                {tech}
+              </Badge>
+            ))}
+          </React.Fragment>
+        );
+      })}
     </MaxWidthWrapper>
   );
 };
