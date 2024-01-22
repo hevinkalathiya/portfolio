@@ -8,8 +8,8 @@ import React from "react";
 const Projects = () => {
   return (
     <MaxWidthWrapper className="mx-auto">
-      <Heading title="Projects  ✨" titleClassName="text-4xl mt-8 " />
-      <div className="grid xl:grid-cols-2 md:grid-cols-1  gap-5 my-12">
+      <Heading title="Projects  ✨" titleClassName="text-4xl mt-20 " />
+      <div className="grid xl:grid-cols-2 md:grid-cols-2  gap-5 my-12">
         {projects.map((project) => (
           <ProjectCard key={project.id} {...project} />
         ))}

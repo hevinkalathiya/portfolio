@@ -6,6 +6,7 @@ import React from "react";
 import { Button } from "./ui/button";
 import { Moon, Sun } from "lucide-react";
 import { usePathname, useRouter } from "next/navigation";
+import MaxWidthWrapper from "./MaxWidthWrapper";
 
 const Navbar = () => {
   const { theme, setTheme } = useTheme();
@@ -32,61 +33,82 @@ const Navbar = () => {
           Hevin Kalathiya
         </h1>
       </header> */}
-      <nav
-        className={cn(
-          "fixed backdrop-blur-lg	z-50 md:relative w-full flex justify-between items-center  py-4 border-gray-600 "
-        )}
-      >
-        <ul className="flex gap-4 md:gap-10 text-base md:text-xl font-medium pl-1">
-          <li
+      <div className="backdrop-blur-lg fixed w-full">
+        <MaxWidthWrapper className="mx-auto ">
+          <nav
             className={cn(
-              "border-b-2 border-transparent hover:border-b-2 hover:border-yellow-500 cursor-pointer",
+              "z-50 w-full flex justify-between items-center  py-4 border-gray-600 "
+            )}
+          >
+            <ul className="flex gap-4 md:gap-10 text-base md:text-xl font-medium pl-1">
+              <li
+                className={cn(
+                  "border-b-2 border-transparent hover:border-b-2 hover:border-yellow-500 cursor-pointer",
+                  pathName === "/" ? "border-b-2 border-yellow-500" : ""
+                )}
+                onClick={() => navigateTo("/")}
+              >
+                Home
+              </li>
+              {/* <Button
+            className={cn(
+              "border-transparent  hover:border-yellow-500 cursor-pointer",
               pathName === "/" ? "border-b-2 border-yellow-500" : ""
             )}
+            variant="outline"
             onClick={() => navigateTo("/")}
           >
-            Home
-          </li>
-          <li className="border-b-2 border-transparent hover:border-b-2 hover:border-purple-900 cursor-pointer">
-            About
-          </li>
-          <li
-            className={cn(
-              "border-b-2 border-transparent hover:border-b-2 hover:border-cyan-500 cursor-pointer",
-              pathName === "/blog" ? "border-b-2 border-cyan-500" : ""
-            )}
-            onClick={() => navigateTo("/blog")}
-          >
-            Blog
-          </li>
-          <li
-            className={cn(
-              "border-b-2 border-transparent hover:border-b-2 hover:border-red-600 cursor-pointer",
-              isActive ? "border-b-2 border-red-600" : ""
-            )}
-            onClick={() => navigateTo("/projects")}
-          >
-            Projects
-          </li>
-          <li className="border-b-2 border-transparent hover:border-b-2 hover:border-green-500 cursor-pointer">
-            Github
-          </li>
-        </ul>
-        <div className="">
-          <Button className="relative" variant="ghost" onClick={toggleTheme}>
-            <Sun
-              className={`h-[1.2rem] w-[1.2rem] rotate-0 scale-100 transition-all ${
-                theme === "dark" ? "dark:-rotate-90 dark:scale-0" : ""
-              }`}
-            />
-            <Moon
-              className={`absolute h-[1.2rem] w-[1.2rem] rotate-90 scale-0 transition-all ${
-                theme === "dark" ? "dark:rotate-0 dark:scale-100" : ""
-              }`}
-            />
-          </Button>
-        </div>
-      </nav>
+            🏡 Home
+          </Button> */}
+              <li
+                className="border-b-2 border-transparent hover:border-b-2 hover:border-purple-900 cursor-pointer"
+                onClick={() => navigateTo("/about")}
+              >
+                About
+              </li>
+              <li
+                className={cn(
+                  "border-b-2 border-transparent hover:border-b-2 hover:border-cyan-500 cursor-pointer",
+                  pathName === "/blog" ? "border-b-2 border-cyan-500" : ""
+                )}
+                onClick={() => navigateTo("/blog")}
+              >
+                Blog
+              </li>
+              <li
+                className={cn(
+                  "border-b-2 border-transparent hover:border-b-2 hover:border-red-600 cursor-pointer",
+                  isActive ? "border-b-2 border-red-600" : ""
+                )}
+                onClick={() => navigateTo("/projects")}
+              >
+                Projects
+              </li>
+              <li className="border-b-2 border-transparent hover:border-b-2 hover:border-green-500 cursor-pointer">
+                Github
+              </li>
+            </ul>
+            <div className="">
+              <Button
+                className="relative"
+                variant="ghost"
+                onClick={toggleTheme}
+              >
+                <Sun
+                  className={`h-[1.2rem] w-[1.2rem] rotate-0 scale-100 transition-all ${
+                    theme === "dark" ? "dark:-rotate-90 dark:scale-0" : ""
+                  }`}
+                />
+                <Moon
+                  className={`absolute h-[1.2rem] w-[1.2rem] rotate-90 scale-0 transition-all ${
+                    theme === "dark" ? "dark:rotate-0 dark:scale-100" : ""
+                  }`}
+                />
+              </Button>
+            </div>
+          </nav>
+        </MaxWidthWrapper>
+      </div>
     </>
   );
 };

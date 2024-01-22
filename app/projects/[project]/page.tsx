@@ -38,10 +38,9 @@ const Page = ({ params }: { params: IParams }) => {
         const divWrapper = wrappers[index];
         const img = images[index];
         const isHovered = index === hoveredIndex;
-
         return (
           <React.Fragment key={project.liveLink}>
-            <div className="flex justify-between">
+            <div className="flex justify-between mt-20">
               <h1 className="text-4xl font-bold">{project.title}</h1>
               <div className="">
                 <Button

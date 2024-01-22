@@ -21,6 +21,10 @@ const config = {
       transitionDuration: {
         "2000": "2000ms",
       },
+      backgroundImage: {
+        background: "url('/images/background.png')",
+        "light-background": "url('/images/light-background.jpg')",
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",

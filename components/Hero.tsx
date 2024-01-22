@@ -10,7 +10,7 @@ const Hero = () => {
   return (
     <MaxWidthWrapper  className="mx-auto">
       <div
-        className={`block md:flex items-center py-8 px-2 mt-16 md:mt-0  ${
+        className={`block md:flex items-center py-8 px-2 mt-16 ${
           theme === "dark" ? "dark" : ""
         }`}
       >
