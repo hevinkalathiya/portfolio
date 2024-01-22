@@ -1,20 +1,12 @@
+// ! name and link should be same
+
 export const projects = [
-  {
-    id: 1,
-    title: "Tour Managment",
-    description: "This is Tour Managment App",
-    imageSrc: "/images/passport-pals.png",
-    name: "tour-managment",
-    githubLink: "https://github.com/Jevil299/Passport-pals-frontend",
-    liveLink: "https://passport-palss.vercel.app/",
-    link: "/projects/tour-managment",
-    techStack: ["React", "JavaScript", "SCSS", "NodeJS"],
-  },
   {
     id: 2,
     title: "Airbnb",
     description: "The Ai Web-App for you to talk with your PDFs",
     imageSrc: "/images/airbnb.png",
+    imageLogo: "/images/airbnb-logo.jpg",
     name: "airbnb",
     githubLink: "https://github.com/hevinkalathiya/airbnb",
     liveLink: "https://airbnb-hevinkalathiya.vercel.app/",
@@ -26,6 +18,7 @@ export const projects = [
     title: "Anime Search",
     description: "Find your favorite anime",
     imageSrc: "/images/anime-search.png",
+    imageLogo: "/images/anime-search-logo.png",
     name: "anime-search",
     githubLink: "https://github.com/hevinkalathiya/Kalkani-it-task",
     liveLink: "https://kalkani-it-task1.vercel.app/",
@@ -38,5 +31,17 @@ export const projects = [
       "Jikan API",
       "Shadcn-UI",
     ],
+  },
+  {
+    id: 1,
+    title: "Tour Managment",
+    description: "This is Tour Managment App",
+    imageSrc: "/images/passport-pals.png",
+    imageLogo: "/images/passport-pals-logo.png",
+    name: "tour-managment",
+    githubLink: "https://github.com/Jevil299/Passport-pals-frontend",
+    liveLink: "https://passport-palss.vercel.app/",
+    link: "/projects/tour-managment",
+    techStack: ["React", "SCSS", "NodeJS"],
   },
 ];

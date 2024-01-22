@@ -5,10 +5,10 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
-const page = () => {
+const Projects = () => {
   return (
     <MaxWidthWrapper className="mx-auto">
-      <Heading title="Ideas  ✨" center titleClassName="text-4xl mt-8 " />
+      <Heading title="Projects  ✨" titleClassName="text-4xl mt-8 " />
       <div className="grid xl:grid-cols-2 md:grid-cols-1  gap-5 my-12">
         {projects.map((project) => (
           <ProjectCard key={project.id} {...project} />
@@ -21,12 +21,12 @@ const page = () => {
 const ProjectCard = ({
   title,
   description,
-  imageSrc,
+  imageLogo,
   link,
 }: {
   title: string;
   description: string;
-  imageSrc: string;
+  imageLogo: string;
   link: string;
 }) => {
   return (
@@ -38,8 +38,8 @@ const ProjectCard = ({
       <Image
         alt={title}
         loading="lazy"
-        src={imageSrc}
-        width="60"
+        src={imageLogo}
+        width="100"
         height="100"
         decoding="async"
         data-nimg="1"
@@ -55,4 +55,4 @@ const ProjectCard = ({
   );
 };
 
-export default page;
+export default Projects;
