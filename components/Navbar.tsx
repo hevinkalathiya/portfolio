@@ -33,7 +33,7 @@ const Navbar = () => {
           Hevin Kalathiya
         </h1>
       </header> */}
-      <div className="backdrop-blur-lg fixed w-full">
+      <div className="backdrop-blur-lg fixed w-full animate-fade-down animate-duration-[1500ms]">
         <MaxWidthWrapper className="mx-auto ">
           <nav
             className={cn(
@@ -61,7 +61,10 @@ const Navbar = () => {
             🏡 Home
           </Button> */}
               <li
-                className="border-b-2 border-transparent hover:border-b-2 hover:border-purple-900 cursor-pointer"
+                className={cn(
+                  "border-b-2 border-transparent hover:border-b-2 hover:border-purple-600 cursor-pointer",
+                  pathName === "/about" ? "border-b-2 border-purple-600" : ""
+                )}
                 onClick={() => navigateTo("/about")}
               >
                 About

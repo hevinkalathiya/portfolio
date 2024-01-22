@@ -40,7 +40,7 @@ const Page = ({ params }: { params: IParams }) => {
         const isHovered = index === hoveredIndex;
         return (
           <React.Fragment key={project.liveLink}>
-            <div className="flex justify-between mt-20">
+            <div className="flex justify-between mt-20 animate-fade-down animate-duration-[1500ms]">
               <h1 className="text-4xl font-bold">{project.title}</h1>
               <div className="">
                 <Button
@@ -66,7 +66,7 @@ const Page = ({ params }: { params: IParams }) => {
                 </Button>
               </div>
             </div>
-            <div className="overflow-hidden card-img-wrapper h-[500px] rounded-xl my-10 m-2 border border-gray-800 dark:border-white">
+            <div className="overflow-hidden card-img-wrapper h-[500px] rounded-xl my-10 m-2 border border-gray-800 dark:border-white animate-fade-up animate-duration-[1500ms]">
               <img
                 src={project.imageSrc}
                 className="card-image w-full duration-2000 rounded-lg cursor-pointer hover:shadow-xl"

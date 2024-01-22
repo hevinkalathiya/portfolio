@@ -8,13 +8,13 @@ const Hero = () => {
   const { theme } = useTheme();
 
   return (
-    <MaxWidthWrapper  className="mx-auto">
+    <MaxWidthWrapper className="mx-auto">
       <div
         className={`block md:flex items-center py-8 px-2 mt-16 ${
           theme === "dark" ? "dark" : ""
         }`}
       >
-        <div className="w-full md:w-7/12">
+        <div className="w-full md:w-7/12 animate-fade-right animate-duration-[1500ms]">
           <h1
             className={cn(
               "text-3xl md:text-5xl1 font-bold dark:text-white text-gray-800"
@@ -33,7 +33,7 @@ const Hero = () => {
             into the depths of my world 🌎
           </p>
         </div>
-        <div className="w-full md:w-5/12 ">
+        <div className="w-full md:w-5/12 animate-fade-left animate-duration-[1500ms]">
           <Image
             className="m-auto md:ml-auto"
             src="/images/hero_image.png"

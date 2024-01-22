@@ -7,8 +7,8 @@ import MaxWidthWrapper from "./MaxWidthWrapper";
 
 const Socials = () => {
   return (
-    <MaxWidthWrapper  className="mx-auto">
-      <div className="flex flex-wrap p-2 items-center justify-center gap-7 mt-5">
+    <MaxWidthWrapper className="mx-auto">
+      <div className="flex flex-wrap p-2 items-center justify-center gap-7 mt-5 animate-fade-up animate-duration-[1500ms]">
         <div
           onClick={() => window.open("https://github.com/hevinkalathiya")}
           className={cn(

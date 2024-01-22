@@ -18,14 +18,12 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
-  // const { theme } = useTheme();
   return (
     <html lang="en" suppressHydrationWarning>
       <body
         className={cn(
           inter.className,
-          // theme === "dark" ? "" : "bg-none",
-          "dark:bg-background bg-no-repeat"
+          "dark:bg-background bg-light-background bg-no-repeat"
         )}
       >
         <ThemeProvider
