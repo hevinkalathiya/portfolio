@@ -37,7 +37,7 @@ const Navbar = () => {
         <MaxWidthWrapper className="mx-auto ">
           <nav
             className={cn(
-              "z-50 w-full flex justify-between items-center  py-4 border-gray-600 "
+              "z-50 w-full flex justify-between backdrop-blur-lg items-center  py-4 border-gray-600 "
             )}
           >
             <ul className="flex gap-4 md:gap-10 text-base md:text-xl font-medium pl-1">
@@ -87,9 +87,9 @@ const Navbar = () => {
               >
                 Projects
               </li>
-              <li className="border-b-2 border-transparent hover:border-b-2 hover:border-green-500 cursor-pointer">
+              {/* <li className="border-b-2 border-transparent hover:border-b-2 hover:border-green-500 cursor-pointer">
                 Github
-              </li>
+              </li> */}
             </ul>
             <div className="">
               <Button
