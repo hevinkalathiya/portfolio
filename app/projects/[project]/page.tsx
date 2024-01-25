@@ -1,4 +1,3 @@
-/* eslint-disable @next/next/no-img-element */
 "use client";
 
 import Heading from "@/components/Heading";
@@ -7,6 +6,7 @@ import { projects } from "@/components/Projects";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Github, Link } from "lucide-react";
+import Image from "next/image";
 import React, { useState } from "react";
 
 interface IParams {
@@ -67,9 +67,11 @@ const Page = ({ params }: { params: IParams }) => {
               </div>
             </div>
             <div className="overflow-hidden card-img-wrapper h-[500px] rounded-xl my-10 m-2 border border-gray-800 dark:border-white animate-fade-up animate-duration-[1500ms]">
-              <img
+              <Image
                 src={project.imageSrc}
-                className="card-image w-full duration-2000 rounded-lg cursor-pointer hover:shadow-xl"
+                width={100}
+                height={100}
+                className="card-image w-full duration-2000 rounded-lg cursor-pointer hover:shadow-xl -z-50"
                 alt={project.title}
                 onMouseEnter={() => handleMouseEnter(index)}
                 onMouseLeave={handleMouseLeave}
