@@ -4,6 +4,7 @@ import React from "react";
 import { FaStackOverflow } from "react-icons/fa";
 import { FaMedium } from "react-icons/fa6";
 import MaxWidthWrapper from "./MaxWidthWrapper";
+import { RoughNotation } from "react-rough-notation";
 
 const Socials = () => {
   return (

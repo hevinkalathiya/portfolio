@@ -3,6 +3,7 @@ import React from "react";
 import { useTheme } from "next-themes";
 import { cn } from "@/lib/utils";
 import MaxWidthWrapper from "./MaxWidthWrapper";
+import { RoughNotation } from "react-rough-notation";
 
 const Hero = () => {
   const { theme } = useTheme();
@@ -10,9 +11,8 @@ const Hero = () => {
   return (
     <MaxWidthWrapper className="mx-auto">
       <div
-        className={`block md:flex items-center py-8 px-2 mt-16 ${
-          theme === "dark" ? "dark" : ""
-        }`}
+        className={`block md:flex items-center py-8 px-2 mt-16 ${theme === "dark" ? "dark" : ""
+          }`}
       >
         <div className="w-full md:w-7/12 animate-fade-right animate-duration-[1500ms]">
           <h1
@@ -20,7 +20,9 @@ const Hero = () => {
               "text-3xl md:text-5xl1 font-bold dark:text-white text-gray-800"
             )}
           >
-            Hellow, I&apos;m Hevin 🎄
+            <RoughNotation animationDelay={1000} color="#fff" type="underline" show={true}>
+              Hellow, I&apos;m Hevin 🎄
+            </RoughNotation>
           </h1>
           <p
             className={cn(

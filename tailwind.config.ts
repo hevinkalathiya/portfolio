@@ -86,4 +86,4 @@ const config = {
 
 export default config;
 
-// require("tailwindcss-animated"), //    
+// require("tailwindcss-animated"), //

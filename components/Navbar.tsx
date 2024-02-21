@@ -33,7 +33,11 @@ const Navbar = () => {
           Hevin Kalathiya
         </h1>
       </header> */}
-      <div className="backdrop-blur-lg fixed w-full animate-fade-down animate-duration-[1500ms]">
+      <div
+        className={cn(
+          "backdrop-blur-lg fixed md:sticky  w-full animate-fade-down animate-duration-[1500ms]"
+        )}
+      >
         <MaxWidthWrapper className="mx-auto ">
           <nav
             className={cn(
