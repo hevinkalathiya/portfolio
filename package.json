@@ -10,8 +10,10 @@
   },
   "dependencies": {
     "@radix-ui/react-slot": "^1.0.2",
+    "@tailwindcss/aspect-ratio": "^0.4.2",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.0",
+    "framer-motion": "^11.0.5",
     "lucide-react": "^0.309.0",
     "next": "14.0.4",
     "next-themes": "^0.2.1",
@@ -20,7 +22,7 @@
     "react-dom": "^18",
     "react-icons": "^5.0.1",
     "react-rough-notation": "^1.0.5",
-    "tailwind-merge": "^2.2.0",
+    "tailwind-merge": "^2.2.1",
     "tailwindcss-animate": "^1.0.7",
     "tailwindcss-animated": "^1.0.1"
   },
