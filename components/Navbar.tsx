@@ -98,6 +98,19 @@ const Navbar = () => {
                   Projects
                 </li>
               </RoughNotation>
+              <RoughNotation
+                // animationDelay={1000}
+                color="green"
+                type="box"
+                show={pathName.includes("/hire-me")}
+              >
+                <li
+                  className={cn("cursor-pointer")}
+                  onClick={() => navigateTo("/hire-me")}
+                >
+                  Hire Me 💸
+                </li>
+              </RoughNotation>
 
               {/* <li className="border-b-2 border-transparent hover:border-b-2 hover:border-green-500 cursor-pointer">
                 Github
