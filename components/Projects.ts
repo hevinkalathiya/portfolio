@@ -44,4 +44,16 @@ export const projects = [
     link: "/projects/tour-managment",
     techStack: ["React", "SCSS", "NodeJS"],
   },
+  {
+    id: 4,
+    title: "Event Hub",
+    description: "This is Event Hub App",
+    imageSrc: "/images/Eventhub.png",
+    imageLogo: "/images/event-hub.png",
+    name: "event-hub",
+    githubLink: "https://github.com/hevinkalathiya/eventify",
+    liveLink: "https://eventify-two.vercel.app/",
+    link: "/projects/event-hub",
+    techStack: ["React", "SCSS", "NodeJS"],
+  },
 ];
