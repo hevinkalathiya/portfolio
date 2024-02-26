@@ -4,7 +4,7 @@ import "./globals.css";
 import { cn } from "@/lib/utils";
 import { ThemeProvider } from "@/components/theme-provider";
 import Navbar from "@/components/Navbar";
-import { useTheme } from "next-themes";
+import { Toaster } from "@/components/ui/toaster";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -36,6 +36,7 @@ export default function RootLayout({
           <Navbar />
           <hr className="text-blue-200 mb-2" />
           {children}
+          <Toaster />
           {/* </div> */}
         </ThemeProvider>
       </body>

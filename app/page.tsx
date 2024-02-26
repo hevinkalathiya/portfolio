@@ -6,11 +6,53 @@ import Workexperience from "@/components/Workexperience";
 import Projects from "./projects/page";
 import { BackgroundBeams } from "@/components/ui/background-beams";
 import { Input } from "@/components/ui/input";
+import { Button } from "@/components/ui/button";
+import { useState } from "react";
+import { newsLetter } from "@/action/newsLetter";
+import { toast } from "@/components/ui/use-toast";
 
 export default function Home() {
+  const [email, setEmail] = useState("");
+  const [errorMessage, setErrorMessage] = useState("");
+  const [loading, setLoading] = useState(false);
+
+  const validateEmail = () => {
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(email)) {
+      setErrorMessage("Please enter a valid email address");
+      return false;
+    }
+    setErrorMessage("");
+    return true;
+  };
+
+  const handleSubmit = async () => {
+    if (!validateEmail()) {
+      return; // Don't proceed with submission if email is not valid
+    }
+
+    try {
+      setLoading(true);
+      await newsLetter({ email }).then((res) => {
+        if (res.status === 200) {
+          setEmail("");
+          toast({
+            description: "Subscribed to newsletter 🎊",
+          });
+        } else {
+          alert("Failed to subscribe to newsletter");
+          setEmail("");
+        }
+      });
+    } catch (error) {
+      console.error("Error subscribing to newsletter:", error);
+    } finally {
+      setLoading(false);
+    }
+  };
+
   return (
     <div className="flex flex-col ">
-      {/* <div className="absolute inset-0 bottom-10 bg-bottom bg-no-repeat bg-slate-50 "> */}
       <Hero />
       <Socials />
       <Workexperience />
@@ -28,11 +70,28 @@ export default function Home() {
             experience the advantages of being part of our community.
           </p>
 
-          <Input
-            type="text"
-            placeholder="hevinatwork@gmail.com"
-            className="rounded-lg border pr-2 border-neutral-800 focus:ring-2 focus:ring-teal-500  w-full relative z-10 mt-4 h-10 bg-neutral-950 placeholder:text-neutral-700"
-          />
+          <div className=" flex items-center justify-center gap-2">
+            <Input
+              type="email"
+              placeholder="hevinatwork@gmail.com"
+              className="rounded-lg border pr-2 border-neutral-800 focus:ring-2 focus:ring-teal-500  w-full relative z-50 h-10 "
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+            />
+            <Button
+              className="cursor-pointer z-50"
+              onClick={handleSubmit}
+              variant="secondary"
+              disabled={loading}
+            >
+              {loading ? "Subscribing..." : "Subscribe 🎇"}
+            </Button>
+          </div>
+          {errorMessage && (
+            <p className="text-red-500 text-sm mt-2 text-start z-50">
+              {errorMessage}
+            </p>
+          )}
         </div>
         <BackgroundBeams className="bg-transparent" />
       </div>
