@@ -33,7 +33,7 @@ const ProjectCard = ({
     <Link
       key={link}
       href={link}
-      className="flex items-center gap-x-4 dark:bg-transparent bg-zinc-50  border border-gray-200 dark:hover:border-gray-700 hover:border-zinc-200 p-4 rounded-lg hover:shadow-xl dark:hover:shadow-sm  hover:duration-300 hover:ease-in-out hover:transform hover:scale-105 dark:shadow-white animate-fade-up animate-duration-[1500ms]"
+      className="flex items-center gap-x-4 dark:bg-transparent bg-zinc-50  border border-gray-500 dark:hover:border-gray-100 hover:border-zinc-200 p-4 rounded-lg hover:shadow-xl dark:hover:shadow-sm  hover:duration-300 hover:ease-in-out hover:transform hover:scale-105 dark:shadow-white animate-fade-up animate-duration-[1500ms]"
     >
       <Image
         alt={title}

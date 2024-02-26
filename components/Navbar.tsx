@@ -89,7 +89,7 @@ const Navbar = () => {
                 // animationDelay={1000}
                 color="red"
                 type="box"
-                show={pathName === "/projects"}
+                show={pathName.includes("/projects")}
               >
                 <li
                   className={cn("cursor-pointer")}
