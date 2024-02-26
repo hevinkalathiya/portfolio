@@ -38,6 +38,7 @@ export default function Home() {
           setEmail("");
           toast({
             description: "Subscribed to newsletter 🎊",
+            className: "bg-green-300 text-black",
           });
         } else {
           alert("Failed to subscribe to newsletter");
