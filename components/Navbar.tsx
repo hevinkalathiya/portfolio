@@ -7,6 +7,7 @@ import { Button } from "./ui/button";
 import { Moon, Sun } from "lucide-react";
 import { usePathname, useRouter } from "next/navigation";
 import MaxWidthWrapper from "./MaxWidthWrapper";
+import { RoughNotation } from "react-rough-notation";
 
 const Navbar = () => {
   const { theme, setTheme } = useTheme();
@@ -45,52 +46,59 @@ const Navbar = () => {
             )}
           >
             <ul className="flex gap-4 md:gap-10 text-base md:text-xl font-medium pl-1">
-              <li
-                className={cn(
-                  "border-b-2 border-transparent hover:border-b-2 hover:border-yellow-500 cursor-pointer",
-                  pathName === "/" ? "border-b-2 border-yellow-500" : ""
-                )}
-                onClick={() => navigateTo("/")}
+              <RoughNotation
+                // animationDelay={1000}
+                color="#FFFF00"
+                type="box"
+                show={pathName === "/"}
               >
-                Home
-              </li>
-              {/* <Button
-            className={cn(
-              "border-transparent  hover:border-yellow-500 cursor-pointer",
-              pathName === "/" ? "border-b-2 border-yellow-500" : ""
-            )}
-            variant="outline"
-            onClick={() => navigateTo("/")}
-          >
-            🏡 Home
-          </Button> */}
-              <li
-                className={cn(
-                  "border-b-2 border-transparent hover:border-b-2 hover:border-purple-600 cursor-pointer",
-                  pathName === "/about" ? "border-b-2 border-purple-600" : ""
-                )}
-                onClick={() => navigateTo("/about")}
+                <li
+                  className={cn(" cursor-pointer")}
+                  onClick={() => navigateTo("/")}
+                >
+                  Home
+                </li>
+              </RoughNotation>
+              <RoughNotation
+                // animationDelay={1000}
+                color="#8300FF"
+                type="box"
+                show={pathName === "/about"}
               >
-                About
-              </li>
-              <li
-                className={cn(
-                  "border-b-2 border-transparent hover:border-b-2 hover:border-cyan-500 cursor-pointer",
-                  pathName === "/blog" ? "border-b-2 border-cyan-500" : ""
-                )}
-                onClick={() => navigateTo("/blog")}
+                <li
+                  className={cn("cursor-pointer")}
+                  onClick={() => navigateTo("/about")}
+                >
+                  About
+                </li>
+              </RoughNotation>
+              <RoughNotation
+                // animationDelay={1000}
+                color="#00FF00"
+                type="box"
+                show={pathName === "/blog"}
               >
-                Blog
-              </li>
-              <li
-                className={cn(
-                  "border-b-2 border-transparent hover:border-b-2 hover:border-red-600 cursor-pointer",
-                  isActive ? "border-b-2 border-red-600" : ""
-                )}
-                onClick={() => navigateTo("/projects")}
+                <li
+                  className={cn("cursor-pointer")}
+                  onClick={() => navigateTo("/blog")}
+                >
+                  Blog
+                </li>
+              </RoughNotation>
+              <RoughNotation
+                // animationDelay={1000}
+                color="red"
+                type="box"
+                show={pathName === "/projects"}
               >
-                Projects
-              </li>
+                <li
+                  className={cn("cursor-pointer")}
+                  onClick={() => navigateTo("/projects")}
+                >
+                  Projects
+                </li>
+              </RoughNotation>
+
               {/* <li className="border-b-2 border-transparent hover:border-b-2 hover:border-green-500 cursor-pointer">
                 Github
               </li> */}
@@ -102,14 +110,12 @@ const Navbar = () => {
                 onClick={toggleTheme}
               >
                 <Sun
-                  className={`h-[1.2rem] w-[1.2rem] rotate-0 scale-100 transition-all ${
-                    theme === "dark" ? "dark:-rotate-90 dark:scale-0" : ""
-                  }`}
+                  className={`h-[1.2rem] w-[1.2rem] rotate-0 scale-100 transition-all ${theme === "dark" ? "dark:-rotate-90 dark:scale-0" : ""
+                    }`}
                 />
                 <Moon
-                  className={`absolute h-[1.2rem] w-[1.2rem] rotate-90 scale-0 transition-all ${
-                    theme === "dark" ? "dark:rotate-0 dark:scale-100" : ""
-                  }`}
+                  className={`absolute h-[1.2rem] w-[1.2rem] rotate-90 scale-0 transition-all ${theme === "dark" ? "dark:rotate-0 dark:scale-100" : ""
+                    }`}
                 />
               </Button>
             </div>
