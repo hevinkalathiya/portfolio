@@ -36,7 +36,7 @@ const heroes = [
       _id: "6",
       name: "Piyush Garg",
       url: "https://twitter.com/piyushgarg_dev",
-      met: true,
+      met: false,
     },
     {
       _id: "7",
@@ -60,6 +60,12 @@ const heroes = [
       _id: "10",
       name: "Manu Arora",
       url: "https://twitter.com/mannupaaji",
+      met: false,
+    },
+    {
+      _id: "10",
+      name: "KR💲NA",
+      url: "https://www.instagram.com/realkrsna",
       met: false,
     },
 ];

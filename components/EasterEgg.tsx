@@ -3,7 +3,7 @@
 import {  CheckSquare2, Square } from "lucide-react";
 import Image from "next/image";
 import { useState } from "react";
-import funImage from "@/public/images/yeah-right.png";
+import funImage from "@/public/images/hehe.gif";
 
 export default function EasterEgg({ isMet }: { isMet: boolean }) {
   const [image, setImage] = useState(false);
