@@ -13,8 +13,8 @@ const page = () => {
       <div className="mt-20 gap-y-10">
         <div className="md:flex flex-row-reverse block gap-5">
         <div className="w-full md:w-1/3 space-y-4">
-            <Image
-              src="/images/profile.jpg"
+            <img
+              src="/images/profile.png"
               alt="developer"
               width={300}
               height={300}
