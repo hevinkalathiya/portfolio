@@ -49,7 +49,7 @@ const page = () => {
               title={
                 "I'm Hevin Kalathiya. I live in India, where I build the future."
               }
-              titleClassName="mb-5 text-5xl"
+              titleClassName="mb-5 text-xl mt-5 md:mt-0 md:text-5xl"
             />
             <div className="space-y-8">
               <p className="text-gray-600 dark:text-gray-400">
