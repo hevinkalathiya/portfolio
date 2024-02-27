@@ -11,8 +11,40 @@ const page = () => {
   return (
     <MaxWidthWrapper className="mx-auto">
       <div className="mt-20 gap-y-10">
-        <div className="flex gap-5">
-          <div className="w-2/3">
+        <div className="md:flex flex-row-reverse block gap-5">
+        <div className="w-full md:w-1/3 space-y-4">
+            <Image
+              src="/images/profile.jpg"
+              alt="developer"
+              width={300}
+              height={300}
+              className="border-gray-200 dark:border-gray-800 rounded-xl w-full"
+            />
+            <div className="flex gap-3 items-center justify-center">
+              <Button
+                className="w-full"
+                onClick={() =>
+                  window.open(
+                    "https://drive.google.com/file/d/1WDmMtTII4mTD3H2OoKoH42Xh5KLNavoV/view?usp=sharing"
+                  )
+                }
+                variant="outline"
+              >
+                Download CV
+                <ExternalLink className="mx-2 h-5 w-5" />
+              </Button>
+              <a target="_blank" href="/images/Hevin_resume.pdf">
+                <Button className="" variant="outline">
+                  <DownloadIcon />{" "}
+                </Button>
+              </a>
+            </div>
+            <p className="flex items-center gap-3">
+              <Mail className="h-5 w-5" />
+              <a href="mailto:hevinatwork@gmail.com">hevinatwork@gmail.com</a>
+            </p>
+          </div>
+          <div className="w-full md:w-2/3">
             <Heading
               title={
                 "I'm Hevin Kalathiya. I live in India, where I build the future."
@@ -117,38 +149,7 @@ const page = () => {
             </section>
             
           </div>
-          <div className="w-1/3 space-y-4">
-            <Image
-              src="/images/profile.jpg"
-              alt="developer"
-              width={300}
-              height={300}
-              className="border-gray-200 dark:border-gray-800 rounded-xl w-full"
-            />
-            <div className="flex gap-3 items-center justify-center">
-              <Button
-                className="w-full"
-                onClick={() =>
-                  window.open(
-                    "https://drive.google.com/file/d/1WDmMtTII4mTD3H2OoKoH42Xh5KLNavoV/view?usp=sharing"
-                  )
-                }
-                variant="outline"
-              >
-                Download CV
-                <ExternalLink className="mx-2 h-5 w-5" />
-              </Button>
-              <a target="_blank" href="/images/Hevin_resume.pdf">
-                <Button className="" variant="outline">
-                  <DownloadIcon />{" "}
-                </Button>
-              </a>
-            </div>
-            <p className="flex items-center gap-3">
-              <Mail className="h-5 w-5" />
-              <a href="mailto:hevinatwork@gmail.com">hevinatwork@gmail.com</a>
-            </p>
-          </div>
+          
         </div>
         <Heroes />
       </div>
