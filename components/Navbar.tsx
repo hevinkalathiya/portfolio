@@ -108,13 +108,9 @@ const Navbar = () => {
                   className={cn("cursor-pointer")}
                   onClick={() => navigateTo("/hire-me")}
                 >
-                  Hire Me 💸
+                  Hire Me 💸 
                 </li>
               </RoughNotation>
-
-              {/* <li className="border-b-2 border-transparent hover:border-b-2 hover:border-green-500 cursor-pointer">
-                Github
-              </li> */}
             </ul>
             <div className="">
               <Button

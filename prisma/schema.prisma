@@ -13,17 +13,19 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
-model ContactUs {
-  id        String @id @default(uuid()) @map("_id")
-  name      String
-  email     String
-  message   String
-  createdAt DateTime @default(now())
-  updatedAt DateTime @updatedAt
+model hireMe {
+  id          String   @id @default(uuid()) @map("_id")
+  name        String
+  email       String
+  website     String?
+  description String
+  budget      String
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
 }
 
 model Newsletter {
-  id        String @id @default(uuid()) @map("_id")
+  id        String   @id @default(uuid()) @map("_id")
   email     String
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
