@@ -1,26 +1,154 @@
-/* eslint-disable react/no-unescaped-entities */
+"use client";
+
 import Heading from "@/components/Heading";
 import MaxWidthWrapper from "@/components/MaxWidthWrapper";
+import { Button } from "@/components/ui/button";
+import { DownloadIcon, ExternalLink, Mail } from "lucide-react";
+import Image from "next/image";
 
 const page = () => {
   return (
     <MaxWidthWrapper className="mx-auto">
-      <div className="mt-20 gap-y-10 animate-fade-up">
-        <Heading title={"About Me 🐱‍👓"} titleClassName="mb-5 text-3xl" />
-        <li className="dark:text-gray-400 text-gray-900 text-lg mb-5 list-outside">
-          Hello, I&apos;m Hevin 👽. I&apos;m 19 years old and currently in my
-          third year of pursuing a Bachelor of Computer Application. I work as a
-          software developer in India, and my goal is to secure a position with
-          a remote company based in the USA.
-        </li>
-        <li className="dark:text-gray-400 text-gray-900 text-lg mb-5 list-outside">
-          I've recently made the decision to resign from my job, and I'm now
-          dedicated to enhancing my skills in common data structures and
-          algorithms. Within the next 2-3 months, I'll be completing my
-          graduation. Looking forward, I aspire to transition into roles such as
-          a frontend developer or full-stack developer within a product-based
-          company.
-        </li>
+      <div className="mt-20 gap-y-10">
+        <div className="flex gap-5">
+          <div className="w-2/3">
+            <Heading
+              title={
+                "I'm Hevin Kalathiya. I live in India, where I build the future."
+              }
+              titleClassName="mb-5 text-5xl"
+            />
+            <div className="space-y-8">
+              <p className="text-gray-600 dark:text-gray-400">
+                I am a self-driven, career-oriented software developer
+                specializing in Fullstack development and open-source with a
+                bachelors degree in computer science. My expertise lies in
+                building interactive web applications on the client side.
+                Primarily working with technologies like JavaScript, Next.js,
+                Node.js and PHP.
+              </p>
+              <p className="text-gray-600 dark:text-gray-400">
+                I strongly believe in continuous learning and improving myself,
+                so I try my best to learn in any situation possible, unfavorable
+                or not.
+              </p>
+              <p className="text-gray-600 dark:text-gray-400">
+                Beyond learning, I enjoy writing technical articles and creating
+                projects that both inspire and benefit fellow developers.
+              </p>
+              <blockquote className="relative overflow-hidden tracking-tight text-lg my-8 lg:py-6 lg:pl-6 pr-12 p-4 border dark:border-zinc-800 border-zinc-200 rounded-md">
+                <svg
+                  stroke="currentColor"
+                  fill="currentColor"
+                  stroke-width="0"
+                  viewBox="0 0 24 24"
+                  className="text-7xl absolute -top-7 -right-5 -rotate-12 dark:text-zinc-800 text-zinc-200"
+                  aria-hidden="true"
+                  height="1em"
+                  width="1em"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path d="M20.309 17.708C22.196 15.66 22.006 13.03 22 13V5a1 1 0 0 0-1-1h-6c-1.103 0-2 .897-2 2v7a1 1 0 0 0 1 1h3.078a2.89 2.89 0 0 1-.429 1.396c-.508.801-1.465 1.348-2.846 1.624l-.803.16V20h1c2.783 0 4.906-.771 6.309-2.292zm-11.007 0C11.19 15.66 10.999 13.03 10.993 13V5a1 1 0 0 0-1-1h-6c-1.103 0-2 .897-2 2v7a1 1 0 0 0 1 1h3.078a2.89 2.89 0 0 1-.429 1.396c-.508.801-1.465 1.348-2.846 1.624l-.803.16V20h1c2.783 0 4.906-.771 6.309-2.292z"></path>
+                </svg>
+                My passion lies in the art of turning innovative ideas into
+                tangible digital experiences, fueling my commitment to pushing
+                the boundaries of what is possible in the dynamic world of
+                development ✨✨✨.
+              </blockquote>
+              <h2
+                id="#Personal Expertise"
+                className="before:hidden hover:before:sm:inline-block hover:before:hidden before:absolute lg:before:-left-5 before:-left-4 lg:before:text-2xl before:text-xl block before:top-1/2 before:-translate-y-1/2 before:opacity-80 dark:before:text-zinc-500 before:text-zinc-400 relative font-bold tracking-tight dark:text-zinc-100 lg:text-4xl text-3xl text-zinc-700 my-8"
+              >
+                <a href="#Personal Expertise">
+                  <strong className="font-bold dark:text-zinc-300 text-zinc-700">
+                    Personal Expertise
+                  </strong>
+                </a>
+              </h2>
+              <p className="mt-2 mb-6">
+                Things I have developed from work and personal life :
+              </p>
+              <ul className="list-[square] mt-5 ml-5">
+                <li className="mb-4">
+                  <strong className="font-bold dark:text-zinc-300 text-zinc-700">
+                    Consistency :{" "}
+                  </strong>
+                  Its the only thing required in today&apos;s world to become
+                  anything you want.
+                </li>
+                <li className="mb-4">
+                  <strong className="font-bold dark:text-zinc-300 text-zinc-700">
+                    Never Say No :
+                  </strong>{" "}
+                  In Life or Work, never say no to anything thrown to you. This
+                  will make you become stronger everyday.
+                </li>
+                <li className="mb-4">
+                  <strong className="font-bold dark:text-zinc-300 text-zinc-700">
+                    Behaviour :
+                  </strong>{" "}
+                  The way you meet and greet people goes a long way. Always be
+                  nice to people and respect them. This will build a
+                  relationship which they will remember forever.{" "}
+                </li>
+              </ul>
+            </div>
+            <section>
+              <div className="mb-8">
+                <h2 className="text-4xl mb-4 font-bold tracking-tight">
+                  Usage
+                </h2>
+                <p className="dark:text-zinc-400 text-zinc-600 max-w-xl">
+                  Tools and technologies I use on a daily basis but not limited
+                  to.
+                </p>
+              </div>
+              <h3 className="font-incognito before:content-['#'] before:hidden hover:before:inline before:absolute before:-left-5 before:text-2xl before:top-1/2 before:-translate-y-1/2 before:opacity-80 dark:before:text-zinc-500 before:text-zinc-400 relative inline-block font-semibold tracking-tight text-2xl mt-6 mb-2">
+                <a href="#[object-object]">
+                  <strong>Trying out</strong>
+                </a>
+              </h3>
+
+              <p className="mt-2 mb-6">
+                ( System Design ) &amp;&amp; ( Data Structures &amp; Algorithms
+                )
+              </p>
+
+            </section>
+          </div>
+          <div className="w-1/3 space-y-4">
+            <Image
+              src="/images/profile.jpg"
+              alt="developer"
+              width={300}
+              height={300}
+              className="border-gray-200 dark:border-gray-800 rounded-xl w-full"
+            />
+            <div className="flex gap-3 items-center justify-center">
+              <Button
+                className="w-full"
+                onClick={() =>
+                  window.open(
+                    "https://drive.google.com/file/d/1WDmMtTII4mTD3H2OoKoH42Xh5KLNavoV/view?usp=sharing"
+                  )
+                }
+                variant="outline"
+              >
+                Download CV
+                <ExternalLink className="mx-2 h-5 w-5" />
+              </Button>
+              <a target="_blank" href="/images/Hevin_resume.pdf">
+                <Button className="" variant="outline">
+                  <DownloadIcon />{" "}
+                </Button>
+              </a>
+            </div>
+            <p className="flex items-center gap-3">
+              <Mail className="h-5 w-5" />
+              <a href="mailto:hevinatwork@gmail.com">hevinatwork@gmail.com</a>
+            </p>
+          </div>
+        </div>
       </div>
     </MaxWidthWrapper>
   );
