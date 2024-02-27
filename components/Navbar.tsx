@@ -108,7 +108,7 @@ const Navbar = () => {
                   className={cn("cursor-pointer")}
                   onClick={() => navigateTo("/hire-me")}
                 >
-                  Hire Me 💸 
+                  Hire Me 💸
                 </li>
               </RoughNotation>
             </ul>
