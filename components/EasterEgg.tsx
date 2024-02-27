@@ -1,6 +1,6 @@
 "use client";
 
-import { CheckCheckIcon, CheckSquare2, Square, SquareCode } from "lucide-react";
+import {  CheckSquare2, Square } from "lucide-react";
 import Image from "next/image";
 import { useState } from "react";
 import funImage from "@/public/images/yeah-right.png";
