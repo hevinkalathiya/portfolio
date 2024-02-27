@@ -1,6 +1,7 @@
 "use client";
 
 import Heading from "@/components/Heading";
+import Heroes from "@/components/Heroes";
 import MaxWidthWrapper from "@/components/MaxWidthWrapper";
 import { Button } from "@/components/ui/button";
 import { DownloadIcon, ExternalLink, Mail } from "lucide-react";
@@ -110,11 +111,11 @@ const page = () => {
               </h3>
 
               <p className="mt-2 mb-6">
-                ( System Design ) &amp;&amp; ( Data Structures &amp; Algorithms
-                )
+                ( System Design ) &amp;&amp; ( Data Structures &amp; Algorithms )
               </p>
 
             </section>
+            
           </div>
           <div className="w-1/3 space-y-4">
             <Image
@@ -149,6 +150,7 @@ const page = () => {
             </p>
           </div>
         </div>
+        <Heroes />
       </div>
     </MaxWidthWrapper>
   );
