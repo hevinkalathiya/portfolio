@@ -1,73 +1,72 @@
 import EasterEgg from "./EasterEgg";
 import { Slide } from "./Slide";
 
-export default async function Heroes() {
-
-    const heroes = [
+const heroes = [
     {
       _id: "1",
-      name: "Dan Abramov",
-      url: "https://twitter.com/dan_abramov",
+      name: "Hitesh Chaudhary",
+      url: "https://twitter.com/Hiteshdotcom",
       met: false,
     },
     {
       _id: "2",
-      name: "Sarah Drasner",
-      url: "https://twitter.com/sarah_edo",
+      name: "Harkirat Singh",
+      url: "https://twitter.com/kirat_tw",
       met: false,
     },
     {
       _id: "3",
-      name: "Cassidy Williams",
-      url: "https://twitter.com/cassidoo",
+      name: "Josh tried coding",
+      url: "https://twitter.com/joshtriedcoding",
       met: false,
     },
     {
       _id: "4",
-      name: "Kent C. Dodds",
-      url: "https://twitter.com/kentcdodds",
+      name: "Code With Antonio",
+      url: "https://twitter.com/YTCodeAntonio",
       met: false,
     },
     {
       _id: "5",
-      name: "Wes Bos",
-      url: "https://twitter.com/wesbos",
+      name: "Rohit Negi",
+      url: "https://www.youtube.com/@Rohit_Negi",
       met: false,
     },
     {
       _id: "6",
-      name: "Chris Biscardi",
-      url: "https://twitter.com/chrisbiscardi",
+      name: "Piyush Garg",
+      url: "https://twitter.com/piyushgarg_dev",
       met: true,
     },
     {
       _id: "7",
-      name: "Maggie Appleton",
-      url: "https://twitter.com/Mappletons",
+      name: "Theo",
+      url: "https://twitter.com/t3dotgg",
       met: false,
     },
     {
       _id: "8",
-      name: "Cassie Evans",
-      url: "https://twitter.com/cassiecodes",
+      name: "Akshay Saini",
+      url: "https://twitter.com/akshaymarch7",
       met: false,
     },
     {
       _id: "9",
-      name: "Jason Lengstorf",
-      url: "https://twitter.com/jlengstorf",
+      name: "Vishal Virani",
+      url: "https://twitter.com/Vishalvirani91",
       met: false,
     },
     {
       _id: "10",
-      name: "Rafael Conde",
-      url: "https://twitter.com/rafahari",
+      name: "Manu Arora",
+      url: "https://twitter.com/mannupaaji",
       met: false,
     },
 ];
 
+export default async function Heroes() {
   return (
-    <section className="max-w-5xl">
+    <section className="max-w-5xl mb-5">
       <Slide delay={0.17}>
         <h2 className="text-4xl mb-4 font-bold tracking-tight">Heroes</h2>
         <p className="dark:text-zinc-400 text-zinc-600 max-w-2xl">
