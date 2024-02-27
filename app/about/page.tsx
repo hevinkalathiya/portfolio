@@ -127,7 +127,7 @@ const page = () => {
               </ul>
             </div>
             <section>
-              <div className="mb-8">
+              {/* <div className="mb-8">
                 <h2 className="text-4xl mb-4 font-bold tracking-tight">
                   Usage
                 </h2>
@@ -135,21 +135,16 @@ const page = () => {
                   Tools and technologies I use on a daily basis but not limited
                   to.
                 </p>
-              </div>
-              <h3 className="font-incognito before:content-['#'] before:hidden hover:before:inline before:absolute before:-left-5 before:text-2xl before:top-1/2 before:-translate-y-1/2 before:opacity-80 dark:before:text-zinc-500 before:text-zinc-400 relative inline-block font-semibold tracking-tight text-2xl mt-6 mb-2">
-                <a href="#[object-object]">
+              </div> */}
+              <h3 className="text-4xl mb-4 font-bold tracking-tight">
                   <strong>Trying out</strong>
-                </a>
               </h3>
-
               <p className="mt-2 mb-6">
                 ( System Design ) &amp;&amp; ( Data Structures &amp; Algorithms )
               </p>
 
-            </section>
-            
-          </div>
-          
+            </section>            
+          </div>          
         </div>
         <Heroes />
       </div>
