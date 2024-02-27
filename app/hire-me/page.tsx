@@ -28,7 +28,7 @@ import { hireMe } from "@/action/hireMe";
 import { useState } from "react";
 import { toast } from "@/components/ui/use-toast";
 
-export const hireMeSchema = z.object({
+const hireMeSchema = z.object({
   name: z.string().nonempty(),
   email: z.string().email(),
   website: z.string().url().optional(),
