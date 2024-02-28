@@ -9,7 +9,7 @@ const data = [
     companyName: "BigElement IT Solutions",
     position: "JR Frontend Developer",
     startDate: "Jun, 2023",
-    endDate: "January, 2024",
+    endDate: "Present",
     description:
       "Created company's in-house website using Next.js from scratch which has increased traffic by 200%. Developed Admin panel of a game using Node.js. Currently working on a React.js project.",
   },
