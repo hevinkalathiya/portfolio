@@ -23,6 +23,16 @@ const data = [
     description:
       "Created company's in-house website using Next.js from scratch which has increased traffic by 200%. Developed Admin panel of a game using Node.js. Currently working on a React.js project.",
   },
+  {
+    id: 3,
+    companyLogo: "/images/upwork.png",
+    companyName: "Upwork",
+    position: "Fullstack Devloper",
+    startDate: "dec, 2023",
+    endDate: "Present",
+    description:
+      "Created company's in-house website using Next.js from scratch which has increased traffic by 200%. Developed Admin panel of a game using Node.js. Currently working on a React.js project.",
+  },
 ];
 
 const Workexperience = () => {
@@ -30,7 +40,7 @@ const Workexperience = () => {
     <MaxWidthWrapper className="mx-auto">
       <div className="py-10 px-2">
         <Heading title={"Work Experience"} />
-        <div className="">
+        <div className="grid lg:grid-cols-2 grid-cols-1 gap-x-12 gap-y-10">
           {data.map((item) => (
             <div
               key={item.id}

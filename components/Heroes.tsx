@@ -2,79 +2,87 @@ import EasterEgg from "./EasterEgg";
 import { Slide } from "./Slide";
 
 const heroes = [
-    {
-      _id: "1",
-      name: "Hitesh Chaudhary",
-      url: "https://twitter.com/Hiteshdotcom",
-      met: false,
-    },
-    {
-      _id: "2",
-      name: "Harkirat Singh",
-      url: "https://twitter.com/kirat_tw",
-      met: false,
-    },
-    {
-      _id: "3",
-      name: "Josh tried coding",
-      url: "https://twitter.com/joshtriedcoding",
-      met: false,
-    },
-    {
-      _id: "4",
-      name: "Code With Antonio",
-      url: "https://twitter.com/YTCodeAntonio",
-      met: false,
-    },
-    {
-      _id: "5",
-      name: "Rohit Negi",
-      url: "https://www.youtube.com/@Rohit_Negi",
-      met: false,
-    },
-    {
-      _id: "6",
-      name: "Piyush Garg",
-      url: "https://twitter.com/piyushgarg_dev",
-      met: false,
-    },
-    {
-      _id: "7",
-      name: "Theo",
-      url: "https://twitter.com/t3dotgg",
-      met: false,
-    },
-    {
-      _id: "8",
-      name: "Akshay Saini",
-      url: "https://twitter.com/akshaymarch7",
-      met: false,
-    },
-    {
-      _id: "9",
-      name: "Vishal Virani",
-      url: "https://twitter.com/Vishalvirani91",
-      met: false,
-    },
-    {
-      _id: "10",
-      name: "Manu Arora",
-      url: "https://twitter.com/mannupaaji",
-      met: false,
-    },
-    {
-      _id: "10",
-      name: "KR💲NA",
-      url: "https://www.instagram.com/realkrsna",
-      met: false,
-    },
+  {
+    _id: "1",
+    name: "Hitesh Chaudhary",
+    url: "https://twitter.com/Hiteshdotcom",
+    met: false,
+  },
+  {
+    _id: "2",
+    name: "Harkirat Singh",
+    url: "https://twitter.com/kirat_tw",
+    met: false,
+  },
+  {
+    _id: "3",
+    name: "Josh tried coding",
+    url: "https://twitter.com/joshtriedcoding",
+    met: false,
+  },
+  {
+    _id: "4",
+    name: "Code With Antonio",
+    url: "https://twitter.com/YTCodeAntonio",
+    met: false,
+  },
+  {
+    _id: "5",
+    name: "Rohit Negi",
+    url: "https://www.youtube.com/@Rohit_Negi",
+    met: false,
+  },
+  {
+    _id: "6",
+    name: "Piyush Garg",
+    url: "https://twitter.com/piyushgarg_dev",
+    met: false,
+  },
+  {
+    _id: "7",
+    name: "Theo",
+    url: "https://twitter.com/t3dotgg",
+    met: false,
+  },
+  {
+    _id: "8",
+    name: "Akshay Saini",
+    url: "https://twitter.com/akshaymarch7",
+    met: false,
+  },
+  {
+    _id: "9",
+    name: "Vishal Virani",
+    url: "https://twitter.com/Vishalvirani91",
+    met: false,
+  },
+  {
+    _id: "10",
+    name: "Manu Arora",
+    url: "https://twitter.com/mannupaaji",
+    met: false,
+  },
+  {
+    _id: "10",
+    name: "KR💲NA",
+    url: "https://www.instagram.com/realkrsna",
+    met: false,
+  },
+  {
+    _id: "10",
+    name: "Samay Raina",
+    url: "https://www.instagram.com/maisamayhoon",
+    met: false,
+  },
 ];
 
 export default async function Heroes() {
   return (
     <section className="max-w-5xl mb-5">
       <Slide delay={0.17}>
-        <h2 className="text-4xl mb-4 font-bold tracking-tight">Heroes</h2>
+        <h2 className="text-4xl mb-4 font-bold tracking-tight">
+          People I&apos;d like to meet
+        </h2>
         <p className="dark:text-zinc-400 text-zinc-600 max-w-2xl">
           Inspired by{" "}
           <a
@@ -104,9 +112,8 @@ export default async function Heroes() {
               href={heroe.url}
               rel="noreferrer noopener"
               target="_blank"
-              className={`font-incognito tracking-wide hover:underline ${
-                heroe.met ? "dark:text-green-500 text-green-700" : null
-              }`}
+              className={`font-incognito tracking-wide hover:underline ${heroe.met ? "dark:text-green-500 text-green-700" : null
+                }`}
             >
               {heroe.name}
             </a>
