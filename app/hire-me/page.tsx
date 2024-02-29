@@ -133,7 +133,7 @@ const HireMe = () => {
                 <FormItem>
                   <FormLabel>Your good name</FormLabel>
                   <FormControl>
-                    <Input placeholder="shadcn" {...field} />
+                    <Input placeholder="Hevin K" {...field} />
                   </FormControl>
                   <FormMessage />
                 </FormItem>
