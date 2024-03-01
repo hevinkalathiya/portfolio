@@ -1,6 +1,7 @@
 import Heading from "@/components/Heading";
 import MaxWidthWrapper from "@/components/MaxWidthWrapper";
 import { projects } from "@/components/Projects";
+import { Slide } from "@/components/Slide";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
@@ -8,15 +9,17 @@ import React from "react";
 const Projects = () => {
   return (
     <MaxWidthWrapper className="mx-auto">
-      <Heading
-        title="Projects  ✨"
-        titleClassName="text-4xl mt-20 animate-fade-down animate-duration-[1500ms]"
-      />
-      <div className="grid xl:grid-cols-2 md:grid-cols-2  gap-5 my-12">
-        {projects.map((project) => (
-          <ProjectCard key={project.id} {...project} />
-        ))}
-      </div>
+      <Slide delay={0.17}>
+        <Heading
+          title="Projects  ✨"
+          titleClassName="text-4xl mt-20 animate-fade-down animate-duration-[1500ms]"
+        />
+        <div className="grid xl:grid-cols-2 md:grid-cols-2  gap-5 my-12">
+          {projects.map((project) => (
+            <ProjectCard key={project.id} {...project} />
+          ))}
+        </div>
+      </Slide>
     </MaxWidthWrapper>
   );
 };
