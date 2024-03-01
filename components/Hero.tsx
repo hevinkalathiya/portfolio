@@ -30,12 +30,7 @@ const Hero = () => {
                 show={true}
               >
                 <ReactTyped
-                  strings={[
-                    "नमस्ते",
-                    "Hello",
-                    "Hola",
-                    "Olá",
-                  ]}
+                  strings={["नमस्ते", "Hello", "Hola", "Olá"]}
                   loop
                   shuffle
                   cursorChar=" | "
@@ -57,7 +52,7 @@ const Hero = () => {
             </p>
           </Slide>
         </div>
-        <div className="w-full md:w-5/12">
+        <div className="w-full md:w-5/12 mt-10 md:mt-0">
           <Slide>
             <div>
               <div className="relative isolate">

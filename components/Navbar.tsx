@@ -72,7 +72,7 @@ const Navbar = () => {
                   About
                 </li>
               </RoughNotation>
-              <RoughNotation
+              {/* <RoughNotation
                 // animationDelay={1000}
                 color="#00FF00"
                 type="box"
@@ -84,7 +84,7 @@ const Navbar = () => {
                 >
                   Blog
                 </li>
-              </RoughNotation>
+              </RoughNotation> */}
               <RoughNotation
                 // animationDelay={1000}
                 color="red"
