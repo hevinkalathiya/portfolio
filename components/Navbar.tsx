@@ -34,11 +34,7 @@ const Navbar = () => {
           Hevin Kalathiya
         </h1>
       </header> */}
-      <div
-        className={cn(
-          "backdrop-blur-lg fixed md:sticky  w-full animate-fade-down animate-duration-[1500ms]"
-        )}
-      >
+      <div className={cn("w-full")}>
         <MaxWidthWrapper className="mx-auto ">
           <nav
             className={cn(
@@ -119,12 +115,14 @@ const Navbar = () => {
                 onClick={toggleTheme}
               >
                 <Sun
-                  className={`h-[1.2rem] w-[1.2rem] rotate-0 scale-100 transition-all ${theme === "dark" ? "dark:-rotate-90 dark:scale-0" : ""
-                    }`}
+                  className={`h-[1.2rem] w-[1.2rem] rotate-0 scale-100 transition-all ${
+                    theme === "dark" ? "dark:-rotate-90 dark:scale-0" : ""
+                  }`}
                 />
                 <Moon
-                  className={`absolute h-[1.2rem] w-[1.2rem] rotate-90 scale-0 transition-all ${theme === "dark" ? "dark:rotate-0 dark:scale-100" : ""
-                    }`}
+                  className={`absolute h-[1.2rem] w-[1.2rem] rotate-90 scale-0 transition-all ${
+                    theme === "dark" ? "dark:rotate-0 dark:scale-100" : ""
+                  }`}
                 />
               </Button>
             </div>
