@@ -7,7 +7,7 @@ import Link from "next/link";
 const page = () => {
   return (
     <MaxWidthWrapper className="mx-auto mt-20">
-      <div className="w-full h-[screen] flex flex-col items-center justify-center">
+      <div className="w-full h-screen flex flex-col items-center justify-center">
         <div className="flex flex-col items-center justify-center">
           <p className="text-3xl md:text-4xl lg:text-5xl text-gray-800 dark:text-white mt-12">
             Coming Soon...... 🚄
