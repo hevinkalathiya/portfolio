@@ -71,7 +71,7 @@ const HireMe = () => {
   }
 
   return (
-    <MaxWidthWrapper className="mx-auto mt-16">
+    <MaxWidthWrapper className="mx-auto mt-0 md:mt-16">
       <Slide>
         <h1 className="text-center text-7xl font-bold">Hire Me</h1>
         <p className="text-2xl italic mt-10 text-center ">

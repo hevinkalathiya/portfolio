@@ -33,7 +33,7 @@ const page = () => {
                 }
                 variant="outline"
               >
-                Download CV
+                View Resume
                 <ExternalLink className="mx-2 h-5 w-5" />
               </Button>
               <a target="_blank" href="/images/Hevin_resume.pdf">
