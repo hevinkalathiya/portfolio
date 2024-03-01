@@ -4,7 +4,7 @@ export const projects = [
   {
     id: 2,
     title: "Airbnb",
-    description: "The Ai Web-App for you to talk with your PDFs",
+    description: "Airbnb clone web-app where you can book rooms for stay",
     imageSrc: "/images/airbnb.png",
     imageLogo: "/images/airbnb-logo.jpg",
     name: "airbnb",
@@ -16,7 +16,7 @@ export const projects = [
   {
     id: 1,
     title: "Tour Managment",
-    description: "This is Tour Managment App",
+    description: "Tour managment web-app where you can book tickets for tours",
     imageSrc: "/images/passport-pals.png",
     imageLogo: "/images/passport-pals-logo.png",
     name: "tour-managment",
@@ -28,7 +28,7 @@ export const projects = [
   {
     id: 3,
     title: "Anime Search",
-    description: "Find your favorite anime",
+    description: "Anime search web-app where you can search for anime",
     imageSrc: "/images/anime-search.png",
     imageLogo: "/images/anime-search-logo.png",
     name: "anime-search",
@@ -48,7 +48,8 @@ export const projects = [
   {
     id: 4,
     title: "Event Hub",
-    description: "This is Event Hub App",
+    description:
+      "Event organizing web-app where you can book tickets for events",
     imageSrc: "/images/Eventhub.png",
     imageLogo: "/images/event-hub.png",
     name: "event-hub",
