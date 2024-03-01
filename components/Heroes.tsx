@@ -78,7 +78,7 @@ const heroes = [
 
 export default async function Heroes() {
   return (
-    <section className="max-w-5xl mb-5">
+    <section className="max-w-5xl my-5 ">
       <Slide delay={0.17}>
         <h2 className="text-4xl mb-4 font-bold tracking-tight">
           People I&apos;d like to meet
@@ -112,8 +112,9 @@ export default async function Heroes() {
               href={heroe.url}
               rel="noreferrer noopener"
               target="_blank"
-              className={`font-incognito tracking-wide hover:underline ${heroe.met ? "dark:text-green-500 text-green-700" : null
-                }`}
+              className={`font-incognito tracking-wide hover:underline ${
+                heroe.met ? "dark:text-green-500 text-green-700" : null
+              }`}
             >
               {heroe.name}
             </a>

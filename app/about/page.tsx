@@ -3,6 +3,8 @@
 import Heading from "@/components/Heading";
 import Heroes from "@/components/Heroes";
 import MaxWidthWrapper from "@/components/MaxWidthWrapper";
+import TechList from "@/components/TechStack";
+import { techItems } from "@/components/TechStackList";
 import { Button } from "@/components/ui/button";
 import { DownloadIcon, ExternalLink, Mail } from "lucide-react";
 import Image from "next/image";
@@ -12,9 +14,9 @@ const page = () => {
     <MaxWidthWrapper className="mx-auto">
       <div className="mt-20 gap-y-10">
         <div className="md:flex flex-row-reverse block gap-5">
-        <div className="w-full md:w-1/3 space-y-4">
-            <img
-              src="/images/profile.png" 
+          <div className="w-full md:w-1/3 space-y-4">
+            <Image
+              src="/images/profile.png"
               alt="developer"
               width={300}
               height={300}
@@ -126,25 +128,19 @@ const page = () => {
                 </li>
               </ul>
             </div>
-            <section>
-              {/* <div className="mb-8">
-                <h2 className="text-4xl mb-4 font-bold tracking-tight">
-                  Usage
-                </h2>
-                <p className="dark:text-zinc-400 text-zinc-600 max-w-xl">
-                  Tools and technologies I use on a daily basis but not limited
-                  to.
-                </p>
-              </div> */}
+            <section className="mt-3">
               <h3 className="text-4xl mb-4 font-bold tracking-tight">
-                  <strong>Trying out</strong>
+                <strong>Trying out</strong>
               </h3>
-              <p className="mt-2 mb-6">
-                ( System Design ) &amp;&amp; ( Data Structures &amp; Algorithms )
-              </p>
-
-            </section>            
-          </div>          
+              <p className="mt-2 mb-6">( Data Structures &amp; Algorithms )</p>
+            </section>
+            <div className="mb-8">
+              <h2 className="text-4xl mb-4 font-bold tracking-tight">
+                Technologies
+              </h2>
+            </div>
+            <TechList />
+          </div>
         </div>
         <Heroes />
       </div>
