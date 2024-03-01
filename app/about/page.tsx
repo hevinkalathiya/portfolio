@@ -13,7 +13,7 @@ import Image from "next/image";
 const page = () => {
   return (
     <MaxWidthWrapper className="mx-auto">
-      <div className="mt-20 gap-y-10">
+      <div className="mt-0 md:mt-20 gap-y-10">
         <div className="md:flex flex-row-reverse block gap-5">
           <div className="w-full md:w-1/3 space-y-4">
             <Image

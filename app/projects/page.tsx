@@ -12,7 +12,7 @@ const Projects = () => {
       <Slide delay={0.17}>
         <Heading
           title="Projects  ✨"
-          titleClassName="text-4xl mt-20 animate-fade-down animate-duration-[1500ms]"
+          titleClassName="text-4xl mt-0 md:mt-20 animate-fade-down animate-duration-[1500ms]"
         />
         <div className="grid xl:grid-cols-2 md:grid-cols-2  gap-5 my-12">
           {projects.map((project) => (

@@ -40,7 +40,7 @@ const Page = ({ params }: { params: IParams }) => {
         const isHovered = index === hoveredIndex;
         return (
           <React.Fragment key={project.liveLink}>
-            <div className="flex justify-between mt-20 animate-fade-down animate-duration-[1500ms]">
+            <div className="block md:flex space-y-5 md:space-y-0 justify-between mt-0 md:mt-20 animate-fade-down animate-duration-[1500ms]">
               <h1 className="text-4xl font-bold">{project.title}</h1>
               <div className="">
                 <Button
@@ -74,11 +74,10 @@ const Page = ({ params }: { params: IParams }) => {
                 onMouseEnter={() => handleMouseEnter(index)}
                 onMouseLeave={handleMouseLeave}
                 style={{
-                  transform: `translateY(${
-                    isHovered
+                  transform: `translateY(${isHovered
                       ? -(img.height - divWrapper?.clientHeight) + "px"
                       : "0px"
-                  })`,
+                    })`,
                 }}
               />
             </div>
