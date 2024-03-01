@@ -5,6 +5,7 @@ import { cn } from "@/lib/utils";
 import { ThemeProvider } from "@/components/theme-provider";
 import Navbar from "@/components/Navbar";
 import { Toaster } from "@/components/ui/toaster";
+import Footer from "@/components/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -18,7 +19,7 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
-  return ( 
+  return (
     <html lang="en" suppressHydrationWarning>
       <body
         className={cn(
@@ -37,6 +38,7 @@ export default function RootLayout({
           <hr className="text-blue-200 mb-2" />
           {children}
           <Toaster />
+          <Footer />
           {/* </div> */}
         </ThemeProvider>
       </body>
