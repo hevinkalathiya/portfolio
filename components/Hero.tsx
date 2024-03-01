@@ -5,6 +5,7 @@ import { cn } from "@/lib/utils";
 import MaxWidthWrapper from "./MaxWidthWrapper";
 import { RoughNotation } from "react-rough-notation";
 import { Slide } from "./Slide";
+import { ReactTyped } from "react-typed";
 
 const Hero = () => {
   const { theme } = useTheme();
@@ -28,9 +29,22 @@ const Hero = () => {
                 type="underline"
                 show={true}
               >
-                Hellow, I&apos;m Hevin 🎄
+                <ReactTyped
+                  strings={[
+                    "नमस्ते",
+                    "Hello",
+                    "Hola",
+                    "Olá",
+                  ]}
+                  loop
+                  shuffle
+                  cursorChar=" | "
+                  typeSpeed={300}
+                />
+                I&apos;m Hevin 🎄
               </RoughNotation>
             </h1>
+
             <p
               className={cn(
                 "text-base md:text-lg mt-4 dark:text-gray-300 text-gray-600"
