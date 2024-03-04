@@ -65,7 +65,7 @@ const page = () => {
                   bachelors degree in computer science. My expertise lies in
                   building interactive web applications on the client side.
                   Primarily working with technologies like JavaScript, Next.js,
-                  Node.js and PHP.
+                  Node.js and React.js.
                 </p>
                 <p className="text-gray-600 dark:text-gray-400">
                   I strongly believe in continuous learning and improving
