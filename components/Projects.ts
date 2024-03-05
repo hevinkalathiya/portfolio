@@ -2,18 +2,6 @@
 
 export const projects = [
   {
-    id: 2,
-    title: "Airbnb",
-    description: "Airbnb clone web-app where you can book rooms for stay",
-    imageSrc: "/images/airbnb.png",
-    imageLogo: "/images/airbnb-logo.jpg",
-    name: "airbnb",
-    githubLink: "https://github.com/hevinkalathiya/airbnb",
-    liveLink: "https://airbnb-hevinkalathiya.vercel.app/",
-    link: "/projects/airbnb",
-    techStack: ["React", "TypeScript", "TailwindCSS", "NextJS"],
-  },
-  {
     id: 1,
     title: "Tour Managment",
     description: "Tour managment web-app where you can book tickets for tours",
@@ -68,5 +56,17 @@ export const projects = [
       "NextAuth",
       "Vercel",
     ],
+  },
+  {
+    id: 2,
+    title: "Airbnb",
+    description: "Airbnb clone web-app where you can book rooms for stay",
+    imageSrc: "/images/airbnb.png",
+    imageLogo: "/images/airbnb-logo.png",
+    name: "airbnb",
+    githubLink: "https://github.com/hevinkalathiya/airbnb",
+    liveLink: "https://airbnb-hevinkalathiya.vercel.app/",
+    link: "/projects/airbnb",
+    techStack: ["React", "TypeScript", "TailwindCSS", "NextJS"],
   },
 ];
