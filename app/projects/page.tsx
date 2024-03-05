@@ -13,7 +13,7 @@ import React from "react";
 
 const Projects = () => {
   return (
-    <MaxWidthWrapper className="mx-auto min-w-[64rem]">
+    <MaxWidthWrapper className="mx-auto">
       <Slide delay={0.17}>
         <Heading
           title="Projects  ✨"
