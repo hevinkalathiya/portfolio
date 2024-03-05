@@ -25,17 +25,17 @@ const page = () => {
             />
             <div className="flex gap-3 items-center justify-center">
               <Button
-                className="w-full"
+                className="w-full inline-flex animate-shimmer items-center justify-center rounded-md border border-slate-800 bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] bg-[length:200%_100%] px-6 font-medium text-slate-400 transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50"
                 onClick={() =>
                   window.open(
                     "https://drive.google.com/file/d/1WDmMtTII4mTD3H2OoKoH42Xh5KLNavoV/view?usp=sharing"
                   )
                 }
-                variant="outline"
               >
                 View Resume
                 <ExternalLink className="mx-2 h-5 w-5" />
               </Button>
+
               <a target="_blank" href="/images/Hevin_resume.pdf">
                 <Button className="" variant="outline">
                   <DownloadIcon />{" "}
