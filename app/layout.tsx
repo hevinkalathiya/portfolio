@@ -59,6 +59,7 @@ export default function RootLayout({
           <hr className="text-blue-200 mb-2" />
           {children}
           <Toaster />
+          <hr className="text-blue-200" />
           <Footer />
           <Analytics />
           <SpeedInsights />

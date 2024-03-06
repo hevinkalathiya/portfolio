@@ -4,8 +4,8 @@ import Image from "next/image";
 
 const Footer = () => {
   return (
-    <MaxWidthWrapper className="mx-auto mt-5">
-      <div className="flex flex-col sticky bottom-0 border-t">
+    <MaxWidthWrapper className="mx-auto">
+      <div className="flex flex-col sticky bottom-0">
         <div className="flex-grow">
           <footer className="py-6">
             <div className="block md:flex justify-between space-y-5 md:space-y-0">
