@@ -27,7 +27,7 @@ const Projects = () => {
           improved.
         </p>
 
-        <div className="grid xl:grid-cols-2 md:grid-cols-2 gap-16 my-12">
+        <div className="grid xl:grid-cols-2 md:grid-cols-2">
           {projects.map((project) => (
             <ProjectCard key={project.id} {...project} />
           ))}
@@ -49,27 +49,27 @@ const ProjectCard = ({
   link: string;
 }) => {
   return (
-    // <Link href={link}>
-    <div className="h-[30rem] w-full flex items-center justify-center ">
-      <PinContainer title={title} href={link}>
-        <div className="flex basis-full flex-col p-4 tracking-tight text-slate-100/50 sm:basis-1/2 w-[30rem] h-[30rem] ">
-          <h3 className="max-w-xs !py-2 !m-0 font-bold  text-base text-slate-800 dark:text-slate-100">
-            {title}
-          </h3>
-          <div className="text-base !m-0 !p-0 font-normal">
-            <span className="text-slate-500 ">{description}</span>
+    <Link href={link}>
+      <div className="h-[25rem] md:h-[30rem] w-full flex items-center justify-center ">
+        <PinContainer title={title} href={link}>
+          <div className="flex basis-full flex-col p-4 tracking-tight text-slate-100/50 sm:basis-1/2 w-[20rem] md:w-[25rem] h-[20rem] md:h-[25rem] ">
+            <h3 className="max-w-xs !pb-2 !m-0 font-bold  text-base text-slate-800 dark:text-slate-100">
+              {title}
+            </h3>
+            <div className="text-base !m-0 !p-0 font-normal">
+              <span className="text-slate-500 ">{description}</span>
+            </div>
+            <Image
+              className="flex flex-1 w-auto rounded-lg mt-4 overflow-auto"
+              src={imageLogo}
+              alt={title}
+              width={1366}
+              height={1366}
+            />
           </div>
-          <Image
-            className="flex flex-1 w-auto rounded-lg mt-4 overflow-auto"
-            src={imageLogo}
-            alt={title}
-            width={1366}
-            height={1366}
-          />
-        </div>
-      </PinContainer>
-    </div>
-    // </Link>
+        </PinContainer>
+      </div>
+    </Link>
   );
 };
 

@@ -10,6 +10,7 @@ import { Button } from "@/components/ui/button";
 import { useState } from "react";
 import { newsLetter } from "@/action/newsLetter";
 import { toast } from "@/components/ui/use-toast";
+import { PinContainer } from "@/components/ui/3d-pin";
 
 export default function Home() {
   const [email, setEmail] = useState("");
