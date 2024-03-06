@@ -13,8 +13,9 @@ const Hero = () => {
   return (
     <MaxWidthWrapper className="mx-auto">
       <div
-        className={`block md:flex items-center py-8 px-2 mt-0 md:mt-10 ${theme === "dark" ? "dark" : ""
-          }`}
+        className={`block md:flex items-center py-8 px-2 mt-0 md:mt-10 ${
+          theme === "dark" ? "dark" : ""
+        }`}
       >
         <div className="w-full md:w-7/12">
           <Slide>
@@ -23,21 +24,7 @@ const Hero = () => {
                 "text-3xl md:text-5xl1 font-bold dark:text-white text-gray-800"
               )}
             >
-              <RoughNotation
-                animationDelay={1000}
-                color="#fff"
-                type="underline"
-                show={true}
-              >
-                <ReactTyped
-                  strings={["नमस्ते", "Hello", "Hola", "Olá"]}
-                  loop
-                  shuffle
-                  cursorChar=" | "
-                  typeSpeed={300}
-                />
-                I&apos;m Hevin 🎄
-              </RoughNotation>
+              नमस्ते 👋 I&apos;m Hevin 🎄
             </h1>
 
             <p
