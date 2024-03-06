@@ -66,7 +66,7 @@ const Page = ({ params }: { params: IParams }) => {
                 </Button>
               </div>
             </div>
-            <div className="overflow-hidden card-img-wrapper h-[500px] rounded-xl my-10 m-2 border border-gray-800 dark:border-white animate-fade-up animate-duration-[1500ms]">
+            <div className="overflow-hidden card-img-wrapper h-[200px] md:h-[500px] rounded-xl my-10 m-2 border border-gray-800 dark:border-white animate-fade-up animate-duration-[1500ms]">
               <img
                 src={project.imageSrc}
                 className="card-image w-full duration-2000 rounded-lg cursor-pointer hover:shadow-xl"
@@ -74,10 +74,11 @@ const Page = ({ params }: { params: IParams }) => {
                 onMouseEnter={() => handleMouseEnter(index)}
                 onMouseLeave={handleMouseLeave}
                 style={{
-                  transform: `translateY(${isHovered
+                  transform: `translateY(${
+                    isHovered
                       ? -(img.height - divWrapper?.clientHeight) + "px"
                       : "0px"
-                    })`,
+                  })`,
                 }}
               />
             </div>
