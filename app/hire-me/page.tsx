@@ -71,7 +71,7 @@ const HireMe = () => {
   }
 
   return (
-    <MaxWidthWrapper className="mx-auto mt-0 md:mt-16">
+    <MaxWidthWrapper className="mx-auto mt-0 md:mt-16 !pb-5">
       <Slide>
         <h1 className="text-center text-7xl font-bold">Hire Me</h1>
         <p className="text-2xl italic mt-10 text-center ">
@@ -217,8 +217,8 @@ const HireMe = () => {
                 </FormItem>
               )}
             />
-            <Button type="submit" variant="secondary" className="mb-10">
-              {loading ? "Sending Reqest..." : "Send Request 💸"}
+            <Button type="submit" variant="secondary">
+              {loading ? "Sending Reqest..." : "Build Something 💸"}
             </Button>
           </form>
         </Form>
