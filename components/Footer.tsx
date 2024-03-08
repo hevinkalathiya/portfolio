@@ -69,7 +69,7 @@ const Footer = () => {
                 </ul>
               </div>
               <div className="text-center">
-                Copyright ©Hevin 2024 All rights Reserved
+                Copyright ©Hevin {new Date().getFullYear()} All rights Reserved
               </div>
             </div>
           </footer>

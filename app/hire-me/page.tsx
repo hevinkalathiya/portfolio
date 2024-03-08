@@ -217,7 +217,7 @@ const HireMe = () => {
                 </FormItem>
               )}
             />
-            <Button type="submit" variant="secondary">
+            <Button type="submit" variant="outline">
               {loading ? "Sending Reqest..." : "Build Something 💸"}
             </Button>
           </form>
