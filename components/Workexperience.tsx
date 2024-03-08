@@ -22,7 +22,7 @@ const data = [
     startDate: "Jun, 2023",
     endDate: "Present",
     description:
-      "Created company's in-house website using Next.js from scratch which has increased traffic by 200%. Developed Admin panel of a game using Node.js. Currently working on a React.js project.",
+      "I specialize in crafting healthcare websites with React.js, adept at building efficient admin panels and optimizing for speed and responsiveness. With a focus on managing large datasets, I ensure a seamless user experience and robust performance.",
   },
   {
     id: 2,
@@ -32,7 +32,7 @@ const data = [
     startDate: "Sep, 2022",
     endDate: "Jun, 2023",
     description:
-      "Created company's in-house website using Next.js from scratch which has increased traffic by 200%. Developed Admin panel of a game using Node.js. Currently working on a React.js project.",
+      "Mastering advanced concepts such as React Hooks, Redux for state management, and implementing sophisticated frontend architectures.",
   },
 ];
 
