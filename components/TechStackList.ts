@@ -1,5 +1,17 @@
 export const techItems = [
   {
+    name: "Html",
+    description: "Markup Language",
+    url: "https://developer.mozilla.org/en-US/docs/Web/HTML",
+    imageSrc: "/images/html.svg",
+  },
+  {
+    name: "CSS",
+    description: "Styling Language",
+    url: "https://developer.mozilla.org/en-US/docs/Web/CSS",
+    imageSrc: "/images/css.svg",
+  },
+  {
     name: "React",
     description: "UI Library",
     url: "https://reactjs.org/",
@@ -55,8 +67,26 @@ export const techItems = [
   },
   {
     name: "Prisma",
-    description: " Simplify working and interacting with databases",
+    description: "interacting with databases",
     url: "https://vercel.com/",
     imageSrc: "/images/prisma.svg",
+  },
+  {
+    name: "Redux",
+    description: "State Management",
+    url: "https://redux.js.org/",
+    imageSrc: "/images/redux.svg",
+  },
+  {
+    name: "Docker",
+    description: "Containerization",
+    url: "https://www.docker.com/",
+    imageSrc: "/images/docker.svg",
+  },
+  {
+    name: "Git",
+    description: "Version Control",
+    url: "https://git-scm.com/",
+    imageSrc: "/images/git.svg",
   },
 ];

@@ -25,7 +25,8 @@ const page = () => {
             />
             <div className="flex gap-3 items-center justify-center">
               <Button
-                className="w-full inline-flex animate-shimmer items-center justify-center rounded-md border border-slate-800 bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] bg-[length:200%_100%] px-6 font-medium text-slate-400 transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50"
+                className="w-full"
+                variant="outline"
                 onClick={() =>
                   window.open(
                     "https://drive.google.com/file/d/1WDmMtTII4mTD3H2OoKoH42Xh5KLNavoV/view?usp=sharing"
@@ -54,7 +55,7 @@ const page = () => {
                 title={
                   "I'm Hevin Kalathiya. I live in India, where I build the future."
                 }
-                titleClassName="mb-5 text-xl mt-5 md:mt-0 md:text-5xl"
+                titleClassName="mb-5 text-xl mt-5 md:mt-0 md:text-4xl"
               />
             </Slide>
             <Slide>
@@ -146,11 +147,9 @@ const page = () => {
               </section>
             </Slide>
             <Slide>
-              <div className="mb-8">
-                <h2 className="text-4xl mb-4 font-bold tracking-tight">
-                  Technologies
-                </h2>
-              </div>
+              <h3 className="text-4xl mb-4 font-bold tracking-tight">
+                <strong>Technologies</strong>
+              </h3>
             </Slide>
             <TechList />
           </div>
