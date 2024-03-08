@@ -45,7 +45,7 @@ export default function RootLayout({
       <body
         className={cn(
           inter.className,
-          "dark:bg-background bg-light-background bg-no-repeat"
+          "dark:bg-background bg-light-background bg-repeat dark:bg-no-repeat"
         )}
       >
         <ThemeProvider

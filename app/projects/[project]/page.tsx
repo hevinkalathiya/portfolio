@@ -40,7 +40,7 @@ const Page = ({ params }: { params: IParams }) => {
         const isHovered = index === hoveredIndex;
         return (
           <React.Fragment key={project.liveLink}>
-            <div className="block md:flex space-y-5 md:space-y-0 justify-between mt-0 md:mt-20 animate-fade-down animate-duration-[1500ms]">
+            <div className="block md:flex space-y-5 md:space-y-0 justify-between mt-0 md:mt-10 animate-fade-down animate-duration-[1500ms]">
               <h1 className="text-4xl font-bold">{project.title}</h1>
               <div className="">
                 <Button
