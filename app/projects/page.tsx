@@ -5,11 +5,8 @@ import MaxWidthWrapper from "@/components/MaxWidthWrapper";
 import { projects } from "@/components/Projects";
 import { Slide } from "@/components/Slide";
 import { PinContainer } from "@/components/ui/3d-pin";
-import { Badge } from "@/components/ui/badge";
 import Image from "next/image";
 import Link from "next/link";
-
-import React from "react";
 
 const Projects = () => {
   return (

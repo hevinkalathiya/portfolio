@@ -185,14 +185,14 @@ const HireMe = () => {
                       </FormControl>
                       <SelectContent>
                         <SelectItem value="Less than 5k">
-                          Less than 5k
+                          Less than 100
                         </SelectItem>
-                        <SelectItem value="5k - 10k">5k - 10k</SelectItem>
-                        <SelectItem value="10k - 20k">10k - 20k</SelectItem>
-                        <SelectItem value="20k - 50k">20k - 50k</SelectItem>
-                        <SelectItem value="50k - 100k">50k - 100k</SelectItem>
+                        <SelectItem value="5k - 10k">100 - 500</SelectItem>
+                        <SelectItem value="10k - 20k">500 - 1000</SelectItem>
+                        <SelectItem value="20k - 50k">1000 - 5000</SelectItem>
+                        <SelectItem value="50k - 100k">5000 - 10000</SelectItem>
                         <SelectItem value="More than 100k">
-                          More than 100k
+                          More than 10000
                         </SelectItem>
                       </SelectContent>
                     </Select>

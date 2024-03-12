@@ -105,7 +105,7 @@ export default async function Heroes() {
         {heroes.map((heroe) => (
           <li
             key={heroe._id}
-            className="flex items-center gap-x-2 dark:bg-primary-bg bg-zinc-100 dark:bg-[#27272b66] border dark:border-zinc-800 border-zinc-200 rounded-md px-2 py-2"
+            className="flex items-center gap-x-2 dark:bg-primary-bg bg-zinc-100/20 dark:bg-[#27272b66]/20 border dark:border-zinc-800 border-zinc-200 rounded-md px-2 py-2"
           >
             <EasterEgg isMet={heroe.met} />
             <a
