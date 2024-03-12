@@ -25,10 +25,10 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://hevinkalathiya.vercel.app",
+    url: "https://hevin.site",
     images: [
       {
-        url: "/public/images/hero_image.png",
+        url: "https://www.hevin.site/_next/image?url=%2Fimages%2Fhero_image.png&w=256&q=100",
         width: 1200,
         height: 630,
         alt: "Hevin Kalathiya",
