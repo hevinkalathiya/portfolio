@@ -12,10 +12,29 @@ import { SpeedInsights } from "@vercel/speed-insights/next";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Software Engineer, Full Stack Developer, and Tech Enthusiast",
+  title: {
+    default: "Hevin Kalathiya",
+    template: "%s - Hevin Kalathiya",
+  },
   description: "Software Engineer, Full Stack Developer, and Tech Enthusiast",
-
   keywords: "Software, Engineer, Full Stack, Developer, Tech, Enthusiast",
+  twitter: {
+    site: "@hevin_kalathiya",
+    card: "summary_large_image",
+  },
+  openGraph: {
+    type: "website",
+    locale: "en_US",
+    url: "https://hevinkalathiya.vercel.app",
+    images: [
+      {
+        url: "/public/images/hero_image.png",
+        width: 1200,
+        height: 630,
+        alt: "Hevin Kalathiya",
+      },
+    ],
+  },
 };
 
 export default function RootLayout({

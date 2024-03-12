@@ -3,9 +3,7 @@ import React from "react";
 import { useTheme } from "next-themes";
 import { cn } from "@/lib/utils";
 import MaxWidthWrapper from "./MaxWidthWrapper";
-import { RoughNotation } from "react-rough-notation";
 import { Slide } from "./Slide";
-import { ReactTyped } from "react-typed";
 
 const Hero = () => {
   const { theme } = useTheme();

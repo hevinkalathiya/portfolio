@@ -8,6 +8,7 @@ import TechList from "@/components/TechStack";
 import { techItems } from "@/components/TechStackList";
 import { Button } from "@/components/ui/button";
 import { DownloadIcon, ExternalLink, Mail } from "lucide-react";
+import { Metadata } from "next";
 import Image from "next/image";
 
 const page = () => {
