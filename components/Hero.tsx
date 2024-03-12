@@ -13,15 +13,14 @@ const Hero = () => {
   return (
     <MaxWidthWrapper className="mx-auto ">
       <div
-        className={`block md:flex items-center py-8 px-2 mt-0 md:mt-10 ${
-          theme === "dark" ? "dark" : ""
-        }`}
+        className={`block md:flex items-center py-8 px-2 mt-0 md:mt-10 ${theme === "dark" ? "dark" : ""
+          }`}
       >
         <div className="w-full md:w-7/12">
           <Slide>
             <h1
               className={cn(
-                "text-3xl md:text-5xl1 font-bold dark:text-white text-gray-800"
+                "text-3xl md:text-5xl font-bold dark:text-white text-gray-800"
               )}
             >
               नमस्ते 👋 I&apos;m Hevin 🎄
@@ -29,7 +28,7 @@ const Hero = () => {
 
             <p
               className={cn(
-                "text-base md:text-lg mt-4 dark:text-gray-300 text-gray-600"
+                "text-base md:text-xl mt-8 dark:text-gray-300 text-gray-600"
               )}
             >
               Explore my digital sanctuary where creativity and innovation
@@ -45,7 +44,7 @@ const Hero = () => {
               <div className="relative isolate">
                 <div
                   aria-hidden="true"
-                  className="pointer-events-none absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-28 "
+                  className="pointer-events-none absolute inset-x-0 -top-16 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-28 "
                 >
                   <div
                     style={{
