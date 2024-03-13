@@ -14,13 +14,13 @@ const Footer = () => {
                 <ul className="flex items-center gap-x-2 text-sm dark:text-zinc-600 text-zinc-400 md:mt-0 mt-3">
                   <li>
                     <a
-                      href="https://sanity.io"
+                      href="https://www.nextjs.org"
                       rel="noreferrer noopener"
                       target="_blank"
                       className="flex items-center gap-x-2 dark:text-white text-zinc-600 hover:underline"
                     >
                       <Image
-                        alt="sanity logo"
+                        alt="Next logo"
                         loading="lazy"
                         width="20"
                         height="20"
@@ -50,13 +50,13 @@ const Footer = () => {
                   </li>
                   <li>
                     <a
-                      href="https://vercel.com"
+                      href="https://tailwindcss.com/"
                       rel="noreferrer noopener"
                       target="_blank"
                       className="flex items-center gap-x-2 dark:text-white text-zinc-600 hover:underline"
                     >
                       <Image
-                        alt="vercel logo"
+                        alt="Taiwing logo"
                         loading="lazy"
                         width="20"
                         height="20"

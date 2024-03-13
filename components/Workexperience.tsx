@@ -41,7 +41,10 @@ const Workexperience = () => {
     <MaxWidthWrapper className="mx-auto">
       <Slide delay={0.17}>
         <div className="py-10 px-2">
-          <Heading title={"Work Experience 🎢"} />
+          <Heading
+            title={"Work Experience 🎢"}
+            titleClassName="text-4xl mt-0 md:mt-20 mb-10 animate-fade-down animate-duration-[1500ms]"
+          />
           <div className="grid lg:grid-cols-2 grid-cols-1 gap-x-12 gap-y-10">
             {data.map((data) => (
               <div
