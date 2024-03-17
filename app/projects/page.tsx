@@ -1,4 +1,3 @@
-import React from "react";
 import Projects from "./Projects";
 import { Metadata } from "next";
 
@@ -7,6 +6,7 @@ export const metadata: Metadata = {
     default: "Hevin Kalathiya",
     template: "%s - Projects",
   },
+  metadataBase: new URL("https://hevin.site/projects"),
   description:
     "I've worked on tons of little projects over the years but these are the ones that I'm most proud of. Many of them are open-source, so if you see something that piques your interest, check out the code and contribute if you have ideas on how it can be improved.",
   keywords:

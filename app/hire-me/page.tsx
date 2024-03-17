@@ -11,6 +11,7 @@ export const metadata: Metadata = {
     default: "Hevin Kalathiya",
     template: "%s - Hire Me",
   },
+  metadataBase: new URL("https://hevin.site/hire-me"),
   description:
     "This is a description of Hevin Kalathiya's portfolio. It includes his work, projects, and professional experiences.",
   keywords:
