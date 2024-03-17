@@ -1,16 +1,39 @@
-"use client";
-
 import Heading from "@/components/Heading";
 import Heroes from "@/components/Heroes";
 import MaxWidthWrapper from "@/components/MaxWidthWrapper";
 import { Slide } from "@/components/Slide";
 import TechList from "@/components/TechStack";
-import { techItems } from "@/components/TechStackList";
+import ViewResume from "@/components/ViewResume";
 import { Button } from "@/components/ui/button";
-import { DownloadIcon, ExternalLink, Mail } from "lucide-react";
+import { DownloadIcon, Mail } from "lucide-react";
 import { Metadata } from "next";
 import Image from "next/image";
 
+export const metadata: Metadata = {
+  title: {
+    default: "Hevin Kalathiya",
+    template: "%s - About",
+  },
+  description: "Software Engineer, Full Stack Developer, and Tech Enthusiast",
+  keywords: "Software, Engineer, Full Stack, Developer, Tech, Enthusiast, Hevin Kalathiya, Hevin, Kalathiya, Hevin Kalathiya Portfolio, Hevin Kalathiya Blog, Hevin Kalathiya Website, Hevin Kalathiya Developer, Hevin Kalathiya Software Engineer, Hevin Kalathiya Full Stack Developer, Hevin Kalathiya Tech Enthusiast, Hevin Kalathiya Projects, Hevin Kalathiya Resume, Hevin Kalathiya Contact, Hevin Kalathiya About, Hevin Kalathiya Skills, Hevin Kalathiya Experience, Hevin Kalathiya Work, Hevin Kalathiya Blog Posts, Hevin Kalathiya Articles, Hevin Kalathiya Open Source, Hevin Kalathiya GitHub, Hevin Kalathiya LinkedIn, Hevin Kalathiya Twitter, Hevin Kalathiya Instagram, Hevin Kalathiya Facebook, Hevin Kalathiya YouTube, Hevin Kalathiya Stack Overflow, Hevin Kalathiya CodePen, Hevin Kalathiya Dribbble, Hevin Kalathiya Behance, Hevin Kalathiya Pinterest, Hevin Kalathiya Resume, Hevin Kalathiya CV, Hevin Kalathiya Portfolio Website, Hevin Kalathiya Personal Website, Hevin Kalathiya Personal Portfolio, Hevin Kalathiya Professional Portfolio, Hevin Kalathiya Personal Blog, Hevin Kalathiya Professional Blog, Hevin Kalathiya Personal Blog Posts, Hevin Kalathiya Professional Blog Posts, Hevin Kalathiya Personal Articles, Hevin Kalathiya Professional Articles, Hevin Kalathiya Personal Projects, Hevin Kalathiya Professional Projects, Hevin Kalathiya Personal Open Source, Hevin Kalathiya Professional Open Source, Hevin Kalathiya Personal GitHub, Hevin Kalathiya Professional GitHub, Hevin Kalathiya Personal LinkedIn, Hevin Kalathiya Professional LinkedIn, Hevin Kalathiya Personal Twitter, Hevin Kalathiya Professional Twitter, Hevin Kalathiya Personal Instagram, Hevin Kalathiya Professional Instagram, Hevin Kalathiya Personal Facebook, Hevin Kalathiya Professional Facebook, Hevin Kalathiya Personal YouTube, Hevin Kalathiya Professional YouTube, Hevin Kalathiya Personal Stack Overflow, Hevin Kalathiya Professional Stack Overflow, Hevin Kalathiya Personal CodePen, Hevin Kalathiya Professional CodePen, Hevin Kalathiya Personal Dribbble, Hevin Kalathiya, Professional Dribbble, Hevin Kalathiya Personal Behance, Hevin Kalathiya Professional Behance, Hevin Kalathiya Personal Pinterest, Hevin Kalathiya Professional Pinterest, Hevin Kalathiya Personal Resume, Hevin Kalathiya Professional Resume, Hevin Kalathiya Personal CV, Hevin Kalathiya Professional CV, Hevin Kalathiya Personal Portfolio Website, Hevin Kalathiya Professional Portfolio Website, Hevin Kalathiya Personal Personal Website, Hevin Kalathiya Professional Personal Website, Hevin Kalathiya Personal Personal Portfolio, Hevin Kalathiya Professional Personal Portfolio, Hevin Kalathiya Personal Professional Portfolio, Hevin Kalathiya Professional Professional Portfolio, Hevin Kalathiya Personal Personal Blog, Hevin Kalathiya Professional Personal Blog, Hevin Kalathiya Personal Professional Blog, Hevin Kalathiya Professional Professional Blog, Hevin Kalathiya Personal Personal Blog Posts, Hevin Kalathiya Professional Personal Blog Posts, Hevin Kalathiya Personal Professional Blog Posts, Hevin Kalathiya Professional Professional Blog Posts, Hevin Kalathiya Personal Personal Articles, Hevin Kalathiya Professional Personal Articles, Hevin Kalathiya Personal Professional Articles, Hevin Kalathiya Professional Professional Articles, Hevin Kalathiya Personal Personal Projects, Hevin Kalathiya Professional Personal Projects, Hevin Kalathiya Personal Professional Projects, Hevin Kalathiya Professional Professional Projects, Hevin Kalathiya Personal Personal Open Source, Hevin Kalathiya Professional Personal Open Source, Hevin Kalathiya Personal Professional Open Source, Hevin Kalathiya Professional Professional Open Source, Hevin Kalathiya Personal Personal GitHub, Hevin Kalathiya Professional Personal GitHub, Hevin Kalathiya Personal Professional GitHub, Hevin Kalathiya Professional Professional GitHub, Hevin Kalathiya Personal Personal LinkedIn, Hevin Kalathiya Professional Personal LinkedIn, Hevin Kalathiya Personal Professional LinkedIn, Hevin Kalathiya Professional Professional LinkedIn, Hevin Kalathiya Personal Personal Twitter, Hevin Kalathiya Professional Personal Twitter, Hevin Kalathiya Personal Professional Twitter, Hevin Kalathiya Professional Professional Twitter, Hevin Kalathiya Personal Personal Instagram, Hevin Kalathiya Professional Personal Instagram, Hevin Kalathiya Personal Professional Instagram, Hevin Kalathiya Professional Professional Instagram, Hevin Kalathiya Personal Personal Facebook, Hevin Kalathiya Professional Personal Facebook, Hevin Kalathiya Personal ",
+  twitter: {
+    site: "@hevin_kalathiya",
+    card: "summary_large_image",
+  },
+  openGraph: {
+    type: "website",
+    locale: "en_US",
+    url: "https://hevin.site/about",
+    images: [
+      {
+        url: "https://www.hevin.site/_next/image?url=%2Fimages%2Fhero_image.png&w=256&q=100",
+        width: 1200,
+        height: 630,
+        alt: "Hevin Kalathiya",
+      },
+    ],
+  },
+};
 const page = () => {
   return (
     <MaxWidthWrapper className="mx-auto">
@@ -25,18 +48,7 @@ const page = () => {
               className="border-gray-200 dark:border-gray-800 rounded-xl w-full"
             />
             <div className="flex gap-3 items-center justify-center">
-              <Button
-                className="w-full"
-                variant="outline"
-                onClick={() =>
-                  window.open(
-                    "https://drive.google.com/file/d/1WDmMtTII4mTD3H2OoKoH42Xh5KLNavoV/view?usp=sharing"
-                  )
-                }
-              >
-                View Resume
-                <ExternalLink className="mx-2 h-5 w-5" />
-              </Button>
+              <ViewResume />
 
               <a target="_blank" href="/images/Hevin_resume.pdf">
                 <Button className="" variant="outline">

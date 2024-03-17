@@ -4,6 +4,17 @@ import { useTheme } from "next-themes";
 import { cn } from "@/lib/utils";
 import MaxWidthWrapper from "./MaxWidthWrapper";
 import { Slide } from "./Slide";
+import Link from "next/link";
+
+function Badge(props: any) {
+  return (
+    <a
+      {...props}
+      target="_blank"
+      className="border border-neutral-200 dark:border-neutral-700 bg-neutral-50 dark:bg-neutral-800 rounded p-1 text-sm inline-flex items-center leading-4 text-neutral-900 dark:text-neutral-100 no-underline"
+    />
+  );
+}
 
 const Hero = () => {
   const { theme } = useTheme();
@@ -18,21 +29,45 @@ const Hero = () => {
           <Slide>
             <h1
               className={cn(
-                "text-3xl md:text-5xl font-bold dark:text-white text-gray-800"
+                "text-3xl md:text-4xl font-bold dark:text-white text-gray-800"
               )}
             >
               नमस्ते 👋 I&apos;m Hevin 🎄
             </h1>
 
-            <p
-              className={cn(
-                "text-base md:text-xl mt-8 dark:text-gray-300 text-gray-600"
-              )}
-            >
-              Explore my digital sanctuary where creativity and innovation
-              intertwine. I&apos;m Hevin, your guide on this coding odyssey,
-              sharing thoughts and passion projects. Join me – let&apos;s delve
-              into the depths of my world 🌎
+            <p className="prose prose-neutral dark:prose-invert text-base md:text-lg mt-8">
+              {`I'm a frontend developer, optimist, and community builder. I currently `}
+              <Link href="/work">work</Link>
+              {` as the VP of Product at `}
+              {`, where I help teach the `}
+              <Badge href="https://nextjs.org">
+                <img
+                  alt="Next.js logomark"
+                  src="/images/nextjs.svg"
+                  className="!mr-1"
+                  width="14"
+                  height="14"
+                />
+                <span className="">
+
+                Next.js
+                </span>
+              </Badge>
+              {` community, an open-source web framework built with `}
+              <Badge href="https://react.dev">
+                <img
+                  alt="Next.js logomark"
+                  src="/images/react.svg"
+                  className="!mr-1"
+                  width="14"
+                  height="14"
+                />
+                <span className="">
+
+                React
+                </span>
+              </Badge>
+              .
             </p>
           </Slide>
         </div>
