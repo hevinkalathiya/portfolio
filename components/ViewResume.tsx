@@ -11,7 +11,7 @@ const ViewResume = () => {
       variant="outline"
       onClick={() =>
         window.open(
-          "https://drive.google.com/file/d/1WDmMtTII4mTD3H2OoKoH42Xh5KLNavoV/view?usp=sharing"
+          "https://drive.google.com/file/d/1yjIzkiUESaFKlkPLjuMo8rFuShDrd2Vo/view"
         )
       }
     >
