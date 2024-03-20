@@ -66,6 +66,18 @@ const Hero = () => {
 
                   React
                 </span>
+              </Badge> and
+              <Badge href="https://react.dev">
+                <img
+                  alt="Nodelogomark"
+                  src="/images/node-js.svg"
+                  className="!mr-1"
+                  width="14"
+                  height="14"
+                />
+                <span className="">
+                  Node
+                </span>
               </Badge>
               .
             </p>
