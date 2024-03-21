@@ -48,7 +48,7 @@ const ProjectCard = ({
   return (
     <Link href={link}>
       <div className="h-[25rem] md:h-[30rem] w-full flex items-center justify-center ">
-        <PinContainer title={title} href={link}>
+        {/* <PinContainer title={title} href={link}>
           <div className="flex basis-full flex-col p-4 tracking-tight text-slate-100/50 sm:basis-1/2 w-[20rem] md:w-[25rem] h-[20rem] md:h-[25rem] ">
             <h3 className="max-w-xs !pb-2 !m-0 font-bold  text-base text-slate-800 dark:text-slate-100">
               {title}
@@ -64,7 +64,7 @@ const ProjectCard = ({
               height={1366}
             />
           </div>
-        </PinContainer>
+        </PinContainer> */}
       </div>
     </Link>
   );

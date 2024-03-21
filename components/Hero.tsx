@@ -73,7 +73,7 @@ const Hero = () => {
                   height="14"
                 />
                 <span className="">Next JS</span>
-              </Badge>, and more. Let's create something amazing together!
+              </Badge>, and more. Let&aphos;s create something amazing together!
               
             </p>
           </Slide>
