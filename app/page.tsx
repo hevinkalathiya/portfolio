@@ -54,7 +54,7 @@ export default function Home() {
   };
 
   return (
-    <TracingBeam className="px-6">
+    <TracingBeam className="pl:0 md:pl-10">
     <div className="flex flex-col">
       <Hero />
       <Socials />

@@ -37,7 +37,10 @@ const Hero = () => {
             </h1>
 
             <p className="prose prose-neutral dark:prose-invert text-base md:text-lg mt-8">
-              I am a passionate software developer with expertise in web development. I love building scalable and performant applications using modern technologies. My skills include <Badge href="https://www.typescriptlang.org/">
+              I am a passionate software developer with expertise in web
+              development. I love building scalable and performant applications
+              using modern technologies. My skills include{" "}
+              <Badge href="https://www.typescriptlang.org/">
                 <Image
                   alt="Typescript"
                   src="/images/typescript-icon.svg"
@@ -46,7 +49,9 @@ const Hero = () => {
                   height="14"
                 />
                 <span className="">Typescript</span>
-              </Badge>, <Badge href="https://react.dev">
+              </Badge>
+              ,{" "}
+              <Badge href="https://react.dev">
                 <Image
                   alt="Nodelogomark"
                   src="/images/react.svg"
@@ -55,6 +60,9 @@ const Hero = () => {
                   height="14"
                 />
                 <span className="">React</span>
+              </Badge>
+              ,{" "}
+              <Badge href="https://nodejs.org">
                 <Image
                   alt="Nodelogomark"
                   src="/images/node-js.svg"
@@ -63,7 +71,9 @@ const Hero = () => {
                   height="14"
                 />
                 <span className="">Node</span>
-              </Badge>, <Badge href="https://nextjs.org">
+              </Badge>
+              ,{" "}
+              <Badge href="https://nextjs.org">
                 <Image
                   alt="Next JS"
                   src="/images/nextjs.svg"
@@ -72,8 +82,8 @@ const Hero = () => {
                   height="14"
                 />
                 <span className="">Next JS</span>
-              </Badge>, and more. Let&aphos;s create something amazing together!
-              
+              </Badge>
+              , and more. Let&aphos;s create something amazing together!
             </p>
           </Slide>
         </div>
