@@ -22,8 +22,9 @@ const Hero = () => {
   return (
     <MaxWidthWrapper className="mx-auto ">
       <div
-        className={`block md:flex items-center py-8 px-2 mt-0 md:mt-10 ${theme === "dark" ? "dark" : ""
-          }`}
+        className={`block md:flex items-center py-8 px-2 mt-0 md:mt-10 ${
+          theme === "dark" ? "dark" : ""
+        }`}
       >
         <div className="w-full md:w-7/12">
           <Slide>
@@ -48,10 +49,7 @@ const Hero = () => {
                   width="14"
                   height="14"
                 />
-                <span className="">
-
-                  Next.js
-                </span>
+                <span className="">Next.js</span>
               </Badge>
               {` community, an open-source web framework built with `}
               <Badge href="https://react.dev">
@@ -62,12 +60,10 @@ const Hero = () => {
                   width="14"
                   height="14"
                 />
-                <span className="">
-
-                  React
-                </span>
-              </Badge> and
-              <Badge href="https://react.dev">
+                <span className="">React</span>
+              </Badge>{" "}
+              and
+              <Badge href="https://nodejs.org/en">
                 <img
                   alt="Nodelogomark"
                   src="/images/node-js.svg"
@@ -75,9 +71,7 @@ const Hero = () => {
                   width="14"
                   height="14"
                 />
-                <span className="">
-                  Node
-                </span>
+                <span className="">Node</span>
               </Badge>
               .
             </p>
