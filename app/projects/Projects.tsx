@@ -5,6 +5,7 @@ import MaxWidthWrapper from "@/components/MaxWidthWrapper";
 import { projects } from "@/components/Projects";
 import { Slide } from "@/components/Slide";
 import { PinContainer } from "@/components/ui/3d-pin";
+import { HoverEffect } from "@/components/ui/card-hover-effect";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -24,11 +25,7 @@ const Projects = () => {
           improved.
         </p>
 
-        <div className="grid xl:grid-cols-2 md:grid-cols-2">
-          {projects.map((project) => (
-            <ProjectCard key={project.id} {...project} />
-          ))}
-        </div>
+      <HoverEffect items={projects} />
       </Slide>
     </MaxWidthWrapper>
   );
