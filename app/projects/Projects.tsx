@@ -11,7 +11,7 @@ import Link from "next/link";
 
 const Projects = () => {
   return (
-    <MaxWidthWrapper className="mx-auto p-0">
+    <MaxWidthWrapper className="mx-auto p-2">
       <Slide delay={0.17}>
         <Heading
           title="Projects  ✨"
@@ -25,7 +25,11 @@ const Projects = () => {
           improved.
         </p>
 
-      <HoverEffect items={projects} />
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-5 md:gap-14 my-8">
+          {projects.map((project, index) => (
+            <ProjectCard key={index} {...project} />
+          ))}
+        </div>
       </Slide>
     </MaxWidthWrapper>
   );
@@ -36,32 +40,30 @@ const ProjectCard = ({
   description,
   imageLogo,
   link,
+  techStack,
 }: {
   title: string;
   description: string;
   imageLogo: string;
   link: string;
+  techStack: string[];
 }) => {
   return (
     <Link href={link}>
-      <div className="h-[25rem] md:h-[30rem] w-full flex items-center justify-center ">
-        {/* <PinContainer title={title} href={link}>
-          <div className="flex basis-full flex-col p-4 tracking-tight text-slate-100/50 sm:basis-1/2 w-[20rem] md:w-[25rem] h-[20rem] md:h-[25rem] ">
-            <h3 className="max-w-xs !pb-2 !m-0 font-bold  text-base text-slate-800 dark:text-slate-100">
-              {title}
-            </h3>
-            <div className="text-base !m-0 !p-0 font-normal">
-              <span className="text-slate-500 ">{description}</span>
-            </div>
-            <Image
-              className="flex flex-1 w-auto rounded-lg mt-4 overflow-auto"
-              src={imageLogo}
-              alt={title}
-              width={1366}
-              height={1366}
-            />
-          </div>
-        </PinContainer> */}
+      <div className="rounded-xl bg-gray-900/5 dark:bg-slate-500/10 p-5 ring-1 ring-inset ring-gray-900/10 dark:ring-slate-500/10 lg:-m-4 lg:rounded-2xl h-[30rem] lg:p-6">
+        <img
+          src={imageLogo}
+          alt="product preview"
+          width={200}
+          height={200}
+          className="w-full rounded-md h-80 bg-white dark:bg-black shadow-2xl ring-1 ring-gray-900/10"
+        />
+        <div className="mt-4">
+          <h3 className="text-2xl font-bold">{title}</h3>
+          <p className="text-lg mt-2 text-slate-500 dark:text-slate-300">
+            {description}
+          </p>
+        </div>
       </div>
     </Link>
   );

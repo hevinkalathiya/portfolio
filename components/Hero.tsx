@@ -55,7 +55,6 @@ const Hero = () => {
                   height="14"
                 />
                 <span className="">React</span>
-              </Badge>, <Badge href="https://nodejs.org/en">
                 <Image
                   alt="Nodelogomark"
                   src="/images/node-js.svg"

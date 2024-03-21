@@ -20,12 +20,7 @@ export const HoverEffect = ({
   let [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
 
   return (
-    <div
-      className={cn(
-        "grid xl:grid-cols-2 md:grid-cols-2  py-10",
-        className
-      )}
-    >
+    <div className={cn("grid xl:grid-cols-2 md:grid-cols-2  py-10", className)}>
       {items.map((item, idx) => (
         <Link
           href={item?.link}
@@ -53,7 +48,7 @@ export const HoverEffect = ({
           </AnimatePresence>
           <Card>
             <Image
-            alt={item.title}
+              alt={item.title}
               className="flex flex-1 w-full h-64 rounded-lg mt-4 overflow-auto"
               src={item.imageLogo}
               width={1366}
@@ -61,24 +56,24 @@ export const HoverEffect = ({
             />
             <CardTitle>{item.title}</CardTitle>
             <CardDescription>{item.description}</CardDescription>
-                {item.techStack && (
-                    <div className="flex flex-wrap mt-4">
-                    {item.techStack.map((tech) => (
-                        <button className="bg-slate-800 no-underline group cursor-pointer relative shadow-2xl shadow-zinc-900 rounded-full p-px text-xs font-semibold leading-6  text-white inline-block mb-1 mr-1">
-                        <span className="absolute inset-0 overflow-hidden rounded-full">
-                          <span className="absolute inset-0 rounded-full bg-[image:radial-gradient(75%_100%_at_50%_0%,rgba(56,189,248,0.6)_0%,rgba(56,189,248,0)_75%)] opacity-0 transition-opacity duration-500 group-hover:opacity-100" />
-                        </span>
-                        <div className="relative flex space-x-2 items-center z-10 rounded-full bg-zinc-950 py-0.5 px-4 ring-1 ring-white/10 ">
-                          <span>
-                            {tech}
-                          </span>
-                          
-                        </div>
-                        <span className="absolute -bottom-0 left-[1.125rem] h-px w-[calc(100%-2.25rem)] bg-gradient-to-r from-emerald-400/0 via-emerald-400/90 to-emerald-400/0 transition-opacity duration-500 group-hover:opacity-40" />
-                      </button>
-                    ))}
+            {item.techStack && (
+              <div className="flex flex-wrap mt-4">
+                {item.techStack.map((tech) => (
+                  <button
+                    key={tech}
+                    className="bg-slate-800 no-underline group cursor-pointer relative shadow-2xl shadow-zinc-900 rounded-full p-px text-xs font-semibold leading-6  text-white inline-block mb-1 mr-1"
+                  >
+                    <span className="absolute inset-0 overflow-hidden rounded-full">
+                      <span className="absolute inset-0 rounded-full bg-[image:radial-gradient(75%_100%_at_50%_0%,rgba(56,189,248,0.6)_0%,rgba(56,189,248,0)_75%)] opacity-0 transition-opacity duration-500 group-hover:opacity-100" />
+                    </span>
+                    <div className="relative flex space-x-2 items-center z-10 rounded-full bg-neutral-300 dark:bg-zinc-950 py-0.5 px-4 ring-1 ring-white/10 ">
+                      <span>{tech}</span>
                     </div>
-                )}
+                    <span className="absolute -bottom-0 left-[1.125rem] h-px w-[calc(100%-2.25rem)] bg-gradient-to-r from-emerald-400/0 via-emerald-400/90 to-emerald-400/0 transition-opacity duration-500 group-hover:opacity-40" />
+                  </button>
+                ))}
+              </div>
+            )}
           </Card>
         </Link>
       ))}
@@ -96,7 +91,7 @@ export const Card = ({
   return (
     <div
       className={cn(
-        "rounded-2xl h-full w-full p-4 overflow-hidden bg-blue-200/10 border border-transparent dark:border-white/[0.2] group-hover:border-slate-700 relative z-20",
+        "rounded-2xl h-full w-full p-4 overflow-hidden bg-blue-900/10 dark:bg-blue-800/10 border border-transparent dark:border-white/[0.2] group-hover:border-slate-700 relative z-20",
         className
       )}
     >
@@ -114,7 +109,12 @@ export const CardTitle = ({
   children: React.ReactNode;
 }) => {
   return (
-    <h4 className={cn("text-zinc-100 font-bold text-xl tracking-wide mt-4", className)}>
+    <h4
+      className={cn(
+        "text-zinc-100 font-bold text-xl tracking-wide mt-4",
+        className
+      )}
+    >
       {children}
     </h4>
   );
