@@ -37,33 +37,25 @@ const Hero = () => {
             </h1>
 
             <p className="prose prose-neutral dark:prose-invert text-base md:text-lg mt-8">
-              {`I'm a frontend developer, optimist, and community builder. I currently `}
-              <Link href="/work">work</Link>
-              {` as the VP of Product at `}
-              {`, where I help teach the `}
-              <Badge href="https://nextjs.org">
+              I am a passionate software developer with expertise in web development. I love building scalable and performant applications using modern technologies. My skills include <Badge href="https://www.typescriptlang.org/">
                 <img
-                  alt="Next.js logomark"
-                  src="/images/nextjs.svg"
+                  alt="Typescript"
+                  src="/images/typescript-icon.svg"
                   className="!mr-1"
                   width="14"
                   height="14"
                 />
-                <span className="">Next.js</span>
-              </Badge>
-              {` community, an open-source web framework built with `}
-              <Badge href="https://react.dev">
+                <span className="">Typescript</span>
+              </Badge>, <Badge href="https://react.dev">
                 <img
-                  alt="Next.js logomark"
+                  alt="Nodelogomark"
                   src="/images/react.svg"
                   className="!mr-1"
                   width="14"
                   height="14"
                 />
                 <span className="">React</span>
-              </Badge>{" "}
-              and
-              <Badge href="https://nodejs.org/en">
+              </Badge>, <Badge href="https://nodejs.org/en">
                 <img
                   alt="Nodelogomark"
                   src="/images/node-js.svg"
@@ -72,8 +64,17 @@ const Hero = () => {
                   height="14"
                 />
                 <span className="">Node</span>
-              </Badge>
-              .
+              </Badge>, <Badge href="https://nextjs.org">
+                <img
+                  alt="Next JS"
+                  src="/images/nextjs.svg"
+                  className="!mr-1"
+                  width="14"
+                  height="14"
+                />
+                <span className="">Next JS</span>
+              </Badge>, and more. Let's create something amazing together!
+              
             </p>
           </Slide>
         </div>
