@@ -10,6 +10,7 @@ import { Button } from "@/components/ui/button";
 import { useState } from "react";
 import { newsLetter } from "@/action/newsLetter";
 import { toast } from "@/components/ui/use-toast";
+import { TracingBeam } from "@/components/ui/tracing-beam";
 
 export default function Home() {
   const [email, setEmail] = useState("");
@@ -53,7 +54,8 @@ export default function Home() {
   };
 
   return (
-    <div className="flex flex-col ">
+    <TracingBeam className="px-6">
+    <div className="flex flex-col">
       <Hero />
       <Socials />
       <Workexperience />
@@ -97,5 +99,6 @@ export default function Home() {
         <BackgroundBeams className="bg-transparent" />
       </div>
     </div>
+    </TracingBeam>
   );
 }
