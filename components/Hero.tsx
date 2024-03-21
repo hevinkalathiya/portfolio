@@ -38,7 +38,7 @@ const Hero = () => {
 
             <p className="prose prose-neutral dark:prose-invert text-base md:text-lg mt-8">
               I am a passionate software developer with expertise in web development. I love building scalable and performant applications using modern technologies. My skills include <Badge href="https://www.typescriptlang.org/">
-                <img
+                <Image
                   alt="Typescript"
                   src="/images/typescript-icon.svg"
                   className="!mr-1"
@@ -47,7 +47,7 @@ const Hero = () => {
                 />
                 <span className="">Typescript</span>
               </Badge>, <Badge href="https://react.dev">
-                <img
+                <Image
                   alt="Nodelogomark"
                   src="/images/react.svg"
                   className="!mr-1"
@@ -56,7 +56,7 @@ const Hero = () => {
                 />
                 <span className="">React</span>
               </Badge>, <Badge href="https://nodejs.org/en">
-                <img
+                <Image
                   alt="Nodelogomark"
                   src="/images/node-js.svg"
                   className="!mr-1"
@@ -65,7 +65,7 @@ const Hero = () => {
                 />
                 <span className="">Node</span>
               </Badge>, <Badge href="https://nextjs.org">
-                <img
+                <Image
                   alt="Next JS"
                   src="/images/nextjs.svg"
                   className="!mr-1"

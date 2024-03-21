@@ -75,7 +75,7 @@ export default function RootLayout({
         >
           {/* <div className="absolute inset-0 bottom-10 bg-bottom bg-no-repeat bg-slate-50 "> */}
           <Navbar />
-          <hr className="text-blue-200 mb-2" />
+          <hr className="text-blue-200 " />
           {children}
           <Toaster />
           <hr className="text-blue-200" />
