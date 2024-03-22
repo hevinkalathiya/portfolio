@@ -33,7 +33,7 @@ const Page = ({ params }: { params: IParams }) => {
   };
 
   return (
-    <MaxWidthWrapper className="mx-auto">
+    <MaxWidthWrapper className="mx-auto mb-5">
       {filtered.map((project, index) => {
         const divWrapper = wrappers[index];
         const img = images[index];
@@ -74,11 +74,10 @@ const Page = ({ params }: { params: IParams }) => {
                 onMouseEnter={() => handleMouseEnter(index)}
                 onMouseLeave={handleMouseLeave}
                 style={{
-                  transform: `translateY(${
-                    isHovered
+                  transform: `translateY(${isHovered
                       ? -(img.height - divWrapper?.clientHeight) + "px"
                       : "0px"
-                  })`,
+                    })`,
                 }}
               />
             </div>
