@@ -50,13 +50,13 @@ const ProjectCard = ({
 }) => {
   return (
     <Link href={link}>
-      <div className="rounded-xl bg-gray-900/5 hover:bg-gray-900/10 duration-500 dark:bg-slate-500/10 hover:dark:bg-slate-500/40 p-5 ring-1 ring-inset ring-gray-900/10 dark:ring-slate-500/10 lg:-m-4 lg:rounded-2xl h-[30rem] lg:p-6">
+      <div className="rounded-xl bg-gray-900/5 hover:bg-gray-900/10 duration-500 dark:bg-slate-500/10 hover:dark:bg-slate-500/40 p-5 ring-1 ring-inset ring-gray-900/10 dark:ring-slate-500/10 lg:-m-4 lg:rounded-2xl h-[23rem] md:h-[30rem] lg:p-6">
         <img
           src={imageLogo}
           alt="product preview"
           width={200}
           height={200}
-          className="w-full rounded-md h-80 bg-white dark:bg-black shadow-2xl ring-1 ring-gray-900/10"
+          className="w-full rounded-md h-56 md:h-80 bg-white dark:bg-black shadow-2xl ring-1 ring-gray-900/10"
         />
         <div className="mt-4">
           <h3 className="text-2xl font-bold">{title}</h3>
