@@ -3,7 +3,6 @@
 import Hero from "@/components/Hero";
 import Socials from "@/components/Socials";
 import Workexperience from "@/components/Workexperience";
-import Projects from "./projects/page";
 import { BackgroundBeams } from "@/components/ui/background-beams";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
